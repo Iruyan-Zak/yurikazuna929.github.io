@@ -1,0 +1,459 @@
+\documentclass[12pt]{ltjsarticle}
+\usepackage{mymacro}
+\usepackage{mathmode}
+\usepackage{notemode}
+\begin{document}
+\section{光電子放出}
+\subsection{光電子放出の一般の性質}
+◎\red{光電子放出}
+真空中の金属にエネルギー$\varepsilon$の光を当てると、\red{光電子}と呼ばれる電子が真空中に飛び出す。
+
+光は電磁気で記述される・・・\red{電磁波}(波の性質を持つ)
+
+波の振幅が大きいほど、波のエネルギーは大きい。
+
+結局電子が金属中から真空中に飛び出すためには金属にエネルギーを与えて、そのエネルギーを障壁のポテンシャルエネルギー以上にしないといけない。
+
+与えないといけないエネルギーは仕事関数$\phi$なので、電子を真空中に放出したいなら、
+\begin{align*}
+\varepsilon \ge \phi
+\end{align*}
+となるくらいの強い光を与えないといけない。
+
+
+\begin{itembox}[l]{光電子放出に関するいろんな実験}
+\begin{enumerate}
+\item 電子が出てくる条件
+
+光は振幅と周波数(振動数)$\nu$で特徴づけられる。
+\begin{enumerate}
+\item $\nu\ge\nu_0$のとき($\nu_0$は\red{限界周波数})
+
+光電子放出が起きる。
+
+\item $\nu<\nu_0$のとき
+
+光電子放出が起きない。
+しかも振幅(光のエネルギー)とは無関係(速い波じゃないとダメ)
+\end{enumerate}
+
+\item 出てくる電子の数
+
+$\nu\ge\nu_0$で光のエネルギーを大きくすると、
+\underline{電流は大きくなる。}(出てくる電子の数が増える)
+\begin{itembox}[l]{アインシュタインの光量子仮説}
+
+光は粒子としての性質を持ち、1個の光の粒子\red{光子}が周波数$\nu$を持つとき、
+エネルギー$\varepsilon$は$\varepsilon=h\nu$となる。($h$は\red{プランク定数})
+\end{itembox}
+光は波だけでなく、粒子の性質をも併せ持つ(\red{光の二重性})
+
+\end{enumerate}
+\end{itembox}
+
+
+光の周波数$\nu$と仕事関数$\phi$との関係
+\begin{align*}
+&h\nu\ge\phi\\
+\Leftrightarrow&\nu\ge\frac\phi h=\red{\nu_0}
+\end{align*}
+
+この時の波長は$v=f\lambda$より、
+\begin{align*}
+\lambda_0=\frac c{\nu_0}=\frac{ch}\phi
+\end{align*}
+$c$ : 光速\\
+$\lambda_0$ : \red{限界波長}
+
+
+フェルミ準位にある電子が光電子放出するとき、その速度は最高速度$v_m$となる。
+(他の金属中の電子よりも速い)
+
+エネルギー保存則より、
+\begin{align*}
+\frac12mv_m^2&=E_F+\varepsilon-(E_F+\phi)\\
+&=\varepsilon-\phi\\
+&=h\nu-h\nu_0\\
+&=h(\nu-\nu_0)\\
+\therefore v_m&=\sqrt{\frac{2h}m (\nu-\nu_0)}
+\end{align*}
+
+他の光の周波数に依存し、振幅には依存しない現象
+
+例)日焼け
+\begin{itemize}
+\item 電気ストーブ(赤外線)→日焼けしない(周波数が小さい)
+\item 日光(紫外線)→日焼けする(周波数が大きい)
+\end{itemize}
+
+\clearpage
+\section{電位分布と電場}
+\subsection{電位と電場の関係}
+電場$\vec E(\bm E)$電位$V(\bm r)$の時、
+\begin{align*}
+\bm E&=-\nabla V(\bm r)\\
+&=\grad V(\bm r)
+\end{align*}
+grad：\red{勾配}
+
+\newcommand{\vi}[0]{\bm i}
+\newcommand{\vj}[0]{\bm j}
+\newcommand{\vk}[0]{\bm k}
+\newcommand{\vE}[0]{\bm E}
+
+\begin{align*}
+\grad \equiv \nabla &\equiv
+(\round{}x,\round{}y,\round{}z)\\
+&=(\partial_x,\partial_y,\partial_z)\\
+&=\round{}x\vi+\round{}y\vj+\round{}z\vk\\
+\end{align*}
+$\vi,\vj,\vk$:単位ベクトル
+\begin{align*}
+|\vi|=|\vj|=|\vk|=1\\
+\vi\cdot\vj=\vj\cdot\vk=\vk\cdot\vi=0\\
+\vi=(1,0,0),\vj=(0,1,0),\vk=(0,0,1)
+\end{align*}
+$\bm E=(E_x,E_y,E_z)$を$x,y,z$の成分表示すると、
+\begin{align*}
+E_x=-\round Vx,E_y=-\round Vy,E_z=-\round Vz
+\end{align*}
+$V$:スカラー　$\vE$:ベクトル
+
+\subsection{電位分布を求めるための基礎方程式}
+電荷が連続的に分布する球体(\red{空間電荷})を考える。
+
+この時、単位体積あたりの電荷量\rho[C/m$^3$]を\red{空間電荷密度}という。
+
+半径rの球体の全電荷量Qは
+\begin{align*}
+Q=\frac43\pi r^3\rho
+\end{align*}
+となる。
+
+\subsection*{ガウスの法則}
+正の電荷からは電気力線が湧き出し、負の電荷へは電気力線が吸い込まれる。
+電気力線の束を\red{電束}といい、
+1[C]の電荷からは1本の電束が出ているものと定義する。
+
+微小体積を貫く電束を考える。
+ここでは簡単にするために$x$方向に貫く電束のみを考える。
+
+$x$方向の電場の変化量は
+\begin{align*}
+E_x\rightarrow E_x+\round{E_x}{x}dx
+\end{align*}
+これは微小体積での$x$方向の電場の変化量の変化を表す。
+
+\begin{align*}
+(電束の変化)&=\epsilon_0\round{E_x}{x}dxdydz\\
+\\
+\epsilon_0\round{E_x}{x}dx&:電束密度\\
+dydz&:貫く面積\\
+\epsilon_0&:真空の誘電率 [{\rm C^2/(N\cdot m^2)}]\\
+\\
+&=\rho dxdydz(全電荷)
+\end{align*}
+
+$y,z$方向も考えると、
+\begin{align*}
+&\epsilon_0\left[
+\epsilon_0\round{E_x}{x}dxdydz+
+\epsilon_0\round{E_y}{y}dxdydz+
+\epsilon_0\round{E_z}{z}dxdydz
+\right]\\
+=&\epsilon_0\left[\round{E_x}{x}+\round{E_y}{y}+\round{E_z}{z}\right]dxdydz\\
+=&\rho dxdydz
+\end{align*}
+よって、ガウスの法則
+
+\begin{align*}
+\div{\vE}=&\frac{\rho}{\epsilon_0}(=\nabla\cdot\vE)\\
+\div=&(\round{}{x}+\round{}{y}+\round{}{z})
+=\round{\vi}{x}+\round{\vj}{x}+\round{\vk}{x}\\
+\vE=&-\grad{V}
+\end{align*}
+
+\begin{itembox}[htbp]{ガウスの定理微分形}
+\begin{align*}
+\round{^2V}{x^2}+
+\round{^2V}{y^2}+
+\round{^2V}{z^2}=
+-\frac{\rho}{\epsilon_0}
+\end{align*}
+\end{itembox}
+
+\begin{align*}
+\div\grad{V}=\Delta V=&
+\left(\round{\vi}{x}+\round{\vj}{x}+\round{\vk}{x}\right)\cdot
+\left(\round{V\vi}{x}+\round{V\vj}{x}+\round{V\vk}{x}\right)\\
+=&\round{^2V}{x^2}+\round{^2V}{y^2}+\round{^2V}{z^2}\\
+=&-\frac{\rho}{\epsilon_0} 
+\end{align*}
+これを\red{ポアソン方程式}という。
+特に$\rho=0$のとき
+\begin{align*}
+\round{^2V}{x^2}+\round{^2V}{y^2}+\round{^2V}{z^2}=0
+\end{align*}
+である。これを\red{ラプラス方程式}という。
+
+これは2階微分方程式なので、$V$を求めるには初期条件を2つ与える必要がある。
+
+$V=ax+b$と表せるとき、
+\begin{align*}
+&\left\{
+\begin{array}{l}
+\round{^2V}{x^2}=0\\
+V(x=0)=2\\
+V(x=4)=6
+\end{array}
+\right.\\
+&\left\{
+\begin{array}{l}
+b=2\\
+4a+b=6\\
+\end{array}
+\right.
+\Rightarrow a=1,b=2\\
+&\therefore V=x+2\\
+&E=-\round{V}{x}=-1
+\end{align*}
+
+%\newenvironment{simul}[0]{\left\{ \begin{array}{l}}{\end{array} \right.}
+
+\subsubsection*{円筒座標系}
+$r,\phi,z$による座標系
+\begin{align*}
+\frac1r\round{}{r}\left(r\round{V}{r}\right)+
+\frac1{r^2}\round{^2V}{\phi^2}+
+\round{^2V}{\phi^2}
+=-\frac\rho{\epsilon_0}
+\end{align*}
+\begin{align*}
+\begin{simul}
+x=r\cos\phi\\
+y=r\sin\phi
+\end{simul}
+\end{align*}
+
+\subsection{平行平面電極間の電位分布と電場}
+$V=0$の平面電極と、それに平行な$V=V_a$の平面電極が距離$D$[m]離れたところにある。
+2つの電極は$yz$平面上にある。
+
+$x$成分のラプラス方程式($\rho=0$)
+\begin{align*}
+\round{^2V}{x^2}&=0\\
+\int\round{^2V}{x^2}dx&=0\\
+\Leftrightarrow\round{V}{x}&=c\;\;(c:定数)\\
+\int\round{V}{x}dx&=\int cdx\\
+\Leftrightarrow V&=cx+c'\;\;(c':定数)\\
+V(x=0)=0,& V(x=D)=V_a\\
+\begin{simul}
+c'=0\\
+cD+c'=V_a
+\end{simul}
+&\Rightarrow
+\begin{simul}
+c'=0\\
+c=\frac{V_a}{D}
+\end{simul}\\
+\therefore V&=\frac{V_a}{D}x\\
+\\
+電場E_x&=-\round{V}{x}\;\;(E_y=E_z=0)\\
+&=-\frac{V_a}{D}
+\end{align*}
+
+ここで、空間電荷密度$\rho=-kx^{-1/2}$とおく。
+$x$軸方向のポアソン方程式は
+\begin{align*}
+\round{^2V}{x^2}=&\frac{k}{\epsilon_0}x^{-1/2}\\
+\int \round{^2V}{x^2}dx=&\int \frac{k}{\epsilon_0}x^{-1/2}dx\\
+\round Vx=&\frac{k}{\epsilon_0}\cdot 2x^{1/2}+c\;\;(c:定数)\\
+\int \round Vx dx=&\frac{2k}{\epsilon_0}\int x^{1/2}dx+\int c'\;\;(c':定数)
+\end{align*}
+初期条件(境界条件)
+\begin{align*}
+V(x=0)=&0\Leftrightarrow c'=0\\
+V(x=D)=&V_a\Leftrightarrow \frac{4k}{3\epsilon_0}D^{3/2}+cD+c'=V_a\\
+\therefore cD=&V_a-\frac{4k}{3\epsilon_0}c^{1/2}\\
+c=&\frac{V_a}{D}-\frac{4k}{3\epsilon_0}c^{1/2}
+\end{align*}
+
+
+\clearpage
+\newcommand{\vF}[0]{\bm F}
+\newcommand{\vr}[0]{\bm r}
+\newcommand{\vv}[0]{\bm v}
+\section{静電場中の電子の運動}
+\subsection{電場による電子の加速}
+空間中に電子がある。
+ここに静電場$\vE=(E_x.E_y,E_z)$をかけると電子は電場の向きと反対向きに\red{クーロン力}$\vF=(F_x, F_y, F_z)$を受ける。
+電子の電荷を$-e$[C],質量を$m$[kg]とすると、運動方程式より、
+\begin{align*}
+m\frac{d^2\vr}{dt^2}=\vF(=-e\vE)\;\;
+(a\coloneqq\frac{d\vv}{dt},\vv\coloneqq\frac{d\vr}{dt})
+\end{align*}
+成分表示すると、
+\begin{align*}
+\begin{simul}
+m\frac{d^2x}{dt^2}=-eE_x\\
+m\frac{d^2y}{dt^2}=-eE_y\\
+m\frac{d^2z}{dt^2}=-eE_z
+\end{simul}
+\end{align*}
+電位を$V$として$\vE=-\nabla V$より、
+\begin{align*}
+\begin{simul}
+m\frac{d^2x}{dt^2}=e\round{V}{x}\\
+m\frac{d^2y}{dt^2}=e\round{V}{y}\\
+m\frac{d^2z}{dt^2}=e\round{V}{z}
+\end{simul}
+\end{align*}
+
+電子にも重力は働くが、クーロン力よりも十分小さいので無視する。
+
+\subsubsection{平行平面電極間の電子の運動}
+例によってさっきから使っているコンデンサの、$V=0$のところに電子を1個おく。
+電子の初速度は$v_0=0$である。
+電子の運動方程式($\rho=0$)より、
+\begin{align*}
+m\frac{d^2x}{dt^2}=&e\frac{V_a}{D}\\
+\Leftrightarrow \frac{d^2x}{dt^2}=&\frac{eV_a}{D}\\
+これを積分して、\\
+\int\frac{d^2x}{dt^2}dt=&\frac{eV_a}{D}\int dt\\
+\frac xt =& \frac{eV_a}{mD}t+c\;\;(c:初速度(定数))
+\end{align*}
+この時、$v_0=0$より初速度$c$は0である。
+
+もう一度積分して、
+\begin{align*}
+\int\ frac xt dt=& \frac{eV_a}{mD}t\int tdt\\
+x=&\frac{eV_a}{mD}\frac{t^2}{2}+c'\;\;(c':初期位置(定数))\\
+t=0\rightarrow x=&0\\
+\therefore c'=&0\\
+\therefore x=&\frac{eV_a}{2mD}t^2{\rm m}
+\end{align*}
+
+(別解)
+\begin{align*}
+v=&V_a+at\\
+x=&V_0t+\frac12at^2\\
+V_0=&0,a=\frac{eV_a}{mD}\\
+\Rightarrow&
+\begin{simul}
+v=\frac{eV_a}{mD}t\\
+x=\frac{eV_a}{2mD}t^2
+\end{simul}
+\end{align*}
+これは等加速度運動である。
+
+また、電子が-極から+極に到達するまでにかかる時間$\tau$は
+\begin{align*}
+D=\frac{eV_a}{2mD}\tau^2\Leftrightarrow &\tau^2=\frac{2mD^2}{eV_a}\\
+\therefore \tau=&\sqrt{\frac{2m}{eV_a}}D
+\end{align*}
+$\tau$:\red{電子走行時間}($\rho=0,V_0=0$)
+
+\newcommand{\unit}[1]{{\rm \,\,\,[#1]}}
+\subsection{電子ボルト及び電子の速度}
+電子のEOM(一次元$x$軸方向)
+\begin{align*}
+m\frac{dv}{dt} &= e\frac{dV}{dx},\quad\sps{v=\frac{dx}{dt}}\\
+\int mv\frac{dv}{dt}dt &= \int ev\frac{dV}{dx}dt\\
+\int^v_{v_0} &= \int^{V_0}_0 edV\\
+\Leftrightarrow \lps{\frac12mv^2}^v_{v_0} &= \lps{eV}^{V_0}_0\\
+\frac12mv^2-\frac12mv_0^2 &= eV_0\\
+(初速度v_0は0とする)& \\
+\frac12mv^2 &= eV_0 \unit{J}
+\end{align*}
+
+電子が1 [V]の電位差の間を通った時に得られるエネルギーは$1.602\times10^{-19}$ [J]
+
+これを\red{1 [eV(電子ボルト)]}と定義する。
+
+電子の速度は
+\begin{align*}
+v=\sqrt\frac{2eV_0}{m} \unit{m/s}
+\end{align*}
+
+\clearpage
+\section{静磁場中の電子の運動}
+\subsection*{ベクトル積(外積)}
+\newcommand{\va}{\bm A}
+\newcommand{\vb}{\bm B}
+\newcommand{\vc}{\bm C}
+\newcommand{\vd}{\bm D}
+%\newcommand{\vi}{\bm i}
+%\newcommand{\vj}{\bm j}
+%\newcommand{\vk}{\bm k}
+点$O$から\va,\vb が角度$\theta$をなして存在している。
+
+\va と\vb によって作られる平行四辺形の面積$S$は、
+\[ S=|\va||\vb|\sin\theta \]
+このとき、平行四辺形に垂直に交わるベクトル\vc は、
+\[ \vc = \va \times \vb = - \vb \times \va \]
+となる。
+
+よって、
+\begin{align*}
+\va\times\vb &= -\vb\times\va\\
+(\va+\vb)\times\vd &= \va\times\vd + \vb\times\vd\\
+\va=(A_x,A_y,A_z)&\quad \vb=(B_x,B_yB_z)\\
+ここで、x,y,z方向の単位ベクトル&\vi,\vj,\vk を考えると、\\
+\vi\times\vj=\vk,
+\vj\times\vk=\vi&,
+\vk\times\vi=\vj,
+\vi\times\vi=\bm 0
+\end{align*}
+\vi,\vj,\vk は$Cyclic$である。
+
+\begin{align*}
+\va &= A_x\vi+A_y\vj+A_z\vk,
+\vb = B_x\vi+B_y\vj+B_z\vk\\
+\va\times\vb &=
+\sps{A_x\vi+A_y\vj+A_z\vk}\times
+\sps{B_x\vi+B_y\vj+B_z\vk}\\
+&=A_xB_y\vi\times\vj
++A_xB_z\vi\times\vk
++A_yB_x\vj\times\vi
++A_yB_z\vj\times\vk
++A_zB_x\vk\times\vi
++A_zB_y\vk\times\vj\\
+&=(A_yB_z-A_zB_y)\vi
++(A_zB_x-A_xB_z)\vj
++(A_xB_y-A_yB_x)\vk\\
+&=(A_yB_z-A_zB_y,A_zB_x-A_xB_z,A_xB_y-A_yB_x)\\
+&=\left|
+\begin{array}{ccc}
+\vi&\vj&\vk\\
+A_x&A_y&A_z\\
+B_x&B_y&B_z
+\end{array}
+\right|\\
+&=\sum^3_{j,k=1}{\epsilon_{ijk}A_jB_k}
+\end{align*}
+
+\clearpage
+\subsection{磁場による電子の加速}
+\newcommand{\vf}{\bm F}
+%\newcommand{\vr}{\bm r}
+%\newcommand{\vv}{\bm v}
+\bold{◎ローレンツ力}
+磁場中で速度$v$ [m/s]で動く電子は力を受ける。
+この力を\red{ローレンツ力}という。
+
+\[ \vf = -e \vv\times\vb \quad(\vb:磁束密度) \]
+
+電子のEOMは
+\begin{gather*}
+\frac{d^2\vr}{dt^2} = -\frac em\vv\times\vb\\
+成分表示：\vr=(x,y,z),\vv=(v_x,v_y,v_z),\vb=(B_xB_y,B_z)とおく。
+\end{gather*}
+\begin{align*}
+\begin{simul}
+\frac{d^2x}{dt^2} = -\frac em\sps{v_yB_z-v_zB_y}\\
+\frac{d^2y}{dt^2} = -\frac em\sps{v_xB_z-v_zB_x}\\
+\frac{d^2z}{dt^2} = -\frac em\sps{v_xB_y-v_yB_x}
+\end{simul}
+\end{align*}
+
+\end{document}

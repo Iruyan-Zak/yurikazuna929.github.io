@@ -1,0 +1,60 @@
+\documentclass[14pt]{ltjsarticle}
+\usepackage[top=15truemm,bottom=15truemm,left=10truemm,right=10truemm]{geometry}
+\usepackage{luatexja-fontspec}
+\usepackage[ipaex]{luatexja-preset}
+\usepackage{amsmath}
+\usepackage{empheq}
+\usepackage{color}
+\usepackage{ascmac}
+\usepackage{mymacro}
+\newdimen\tbaselineshift
+\begin{document}
+\newcommand{\red}[1]{\textcolor{red}{#1}}
+\newcommand{\bold}[1]{{\bf {#1}}}
+\renewcommand{\labelenumi}{(\arabic{enumi})}
+\section{正規表現}
+\bold{記号列(文字列・語)}:アルファベットV(記号の有限集合)から取り出した記号からなる「列」。
+
+\red{空列}:長さ0の記号列。$\phi$や$\lambda$、$\varepsilon$と表記する。
+
+Vから作られる記号列をすべて含む集合をV*(ヴィ・スター)と書く。
+\begin{align*}
+{\rm V}&=\{a,b\}のとき、\\
+{\rm V*}&=\{\phi, a, b, aa, ab, ba, bb, aaa, \dots\}
+\end{align*}
+
+\begin{itembox}[l]{注意}
+\begin{itemize}
+\item V*には空列が含まれる。
+\item V*の要素は中かっこで囲わない(集合ではなく文字列)
+\end{itemize}
+\end{itembox}
+
+\subsection{正規表現(regular expression)}
+記号列の集合(V*)を表記する方法の1つ。
+[A-Z][0-9]+[a-z]*[1-5|9]?
+この正規表現には"E1333akashi9"などが該当する。
+
+
+\begin{itembox}[l]{正規表現とオートマトン}
+\begin{itemize}
+\item 正規表現があれば、それに対応する有限オートマトンがある。
+\item 有限オートマトンがあれば、それに対応する正規表現がある。
+\end{itemize}
+\end{itembox}
+
+\section{形式言語}
+言語には「自然言語(日本語など)」と「形式言語(C言語など)」がある。
+
+\bold{生成文法}:形式言語を生成する規則
+
+\bold{オートマトン}:形式言語を認識する状態機械
+
+\bold{BNF(バックス・ナウア記法)}
+\csvtab{ll}{
+$\langle hoge\rangle$, 超変数,
+::=, (左)を(右)と定義するi,
+|, または,
+[fuga], fugaはあってもなくても,
+}
+\end{document}

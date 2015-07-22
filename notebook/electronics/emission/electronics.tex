@@ -1,0 +1,163 @@
+\documentclass[12pt]{jsarticle}
+\usepackage[top=15truemm,bottom=15truemm,left=10truemm,right=10truemm]{geometry}
+\usepackage[dvipdfmx]{graphicx}
+% \def\pgfsysdriver{pgfsys-pdftex.def}%(graphicxパッケージを使用しない場合)
+\usepackage{amsmath}
+\usepackage{txfonts}
+\usepackage{mathptmx}
+\usepackage{indentfirst}
+\usepackage{color}
+\usepackage{ascmac}
+%\usepackage[svgnames]{xcolor}%tikzパッケージよりも前に読み込みます。
+%\usepackage{tikz}
+\begin{document}
+\renewcommand{\rmdefault}{ptm}
+\renewcommand{\sfdefault}{phv}
+\renewcommand{\ttdefault}{pcr}
+\newcommand{\red}[1]{\textcolor{red}{#1}}
+\normalfont
+\renewcommand{\labelenumi}{(\arabic{enumi})}
+
+
+\subsection{ダッシュマンリチャードソンの式}
+熱電子放出より、金属の表面から放出される熱電子の電流密度を表す式。
+
+仕事関数$\phi$とフェルミ準位$E_F$の関係
+自由電子が真空に飛び出す条件は
+\begin{align*}
+\frac 1 2mv^2_x=\frac{p_x^2}{2m}&\ge E_F+\phi,\;(p_x=mv_x)\\
+p_x&\ge \sqrt{2m(E_F+\phi)}=p_x
+\end{align*}
+である。
+
+熱電子の電流密度Jは
+\begin{align*}
+J=e\frac NVv_x
+\end{align*}
+$\frac NVv_x$・・・単位体積あたりの電子の数
+$e$,電荷,
+$V$,金属の体積,
+$N$,電子の数
+
+\begin{align*}
+N&=\int^\infty_0n(E)dE\;\;(p_x\ge p_x')\\
+n(E)&=n(E)=4\pi V(\frac{2m}{h^2})^{3/2}\sqrt{E}
+\end{align*}
+
+フェルミ分布関数($E-E_F \gg kT$の時)
+\begin{align*}
+F(E)&=\frac 1{1+\exp{\left[\frac{E-E_F}{kT}\right]}}\\
+F(E)&=\frac 1{\exp{\left[\frac{E-E_F}{kT}\right]}}\\
+F(E)&=\exp{\left[-\frac{E-E_F}{kT}\right]}
+\end{align*}
+
+ここで、エネルギー$E$は、
+\begin{align*}
+E&=\frac 1{2m}(p_x^2+p_y^2+p_z^2)\\
+&=\frac 1{2m}p^2,\;\;(p^2=_x^2+p_y^2+p_z^2)\\
+dE&=\frac 1{2m}\dot 2dp\\
+\therefore J&=\frac eVv_xN\\
+&=\frac eV\int v_x4\pi V(\frac{2m}{h^2})^{3/2}\sqrt{E}F(E)\\
+&=e\frac{4\pi(\frac{2m}{h^2})^{3/2}}{m^2\sqrt{2m}}\int p_xF(p)p^2dp,\;\;(p_x\ge p_x')\\
+\end{align*}
+ここで$p^2dp=\frac1{4\pi}dp_xdp_ydp_z$とすると
+\begin{align*}
+J=
+e\frac{4\pi(\frac{2m}{h^2})^{3/2}}{m^2\sqrt{2m}}
+\frac1{4\pi}
+\int^\infty_{p_x}dp_x
+\int^\infty_{-\infty}dp_y
+\int^\infty_{-\infty}dp_z
+\times p_x
+\exp\left[\frac{E_F}{kT}\right]
+\exp\left[-\frac{p_x}{2mkT}\right]
+\exp\left[-\frac{p_y}{2mkT}\right]
+\exp\left[-\frac{p_z}{2mkT}\right]
+\end{align*}
+
+
+\clearpage
+\section{光電子放出}
+\subsection{光電子放出の一般の性質}
+◎\red{光電子放出}
+真空中の金属にエネルギー$\varepsilon$の光を当てると、\red{光電子}と呼ばれる電子が真空中に飛び出す。
+
+光は電磁気で記述される・・・\red{電磁波}(波の性質を持つ)
+
+波の振幅が大きいほど、波のエネルギーは大きい。
+
+結局電子が金属中から真空中に飛び出すためには金属にエネルギーを与えて、そのエネルギーを障壁のポテンシャルエネルギー以上にしないといけない。
+
+与えないといけないエネルギーは仕事関数$\phi$なので、電子を真空中に放出したいなら、
+\begin{align*}
+\varepsilon \ge \phi
+\end{align*}
+となるくらいの強い光を与えないといけない。
+
+
+\begin{itembox}[l]{光電子放出に関するいろんな実験}
+\begin{enumerate}
+\item 電子が出てくる条件
+
+光は振幅と周波数(振動数)$\nu$で特徴づけられる。
+\begin{enumerate}
+\item $\nu\ge\nu_0$のとき($\nu_0$は\red{限界周波数})
+
+光電子放出が起きる。
+
+\item $\nu<\nu_0$のとき
+
+光電子放出が起きない。
+しかも振幅(光のエネルギー)とは無関係(速い波じゃないとダメ)
+\end{enumerate}
+
+\item 出てくる電子の数
+
+$\nu\ge\nu_0$で光のエネルギーを大きくすると、
+\underline{電流は大きくなる。}(出てくる電子の数が増える)
+\begin{itembox}[l]{アインシュタインの光量子仮説}
+
+光は粒子としての性質を持ち、1個の光の粒子\red{光子}が周波数$\nu$を持つとき、
+エネルギー$\varepsilon$は$\varepsilon=h\nu$となる。($h$は\red{プランク定数})
+\end{itembox}
+光は波だけでなく、粒子の性質をも併せ持つ(\red{光の二重性})
+
+\end{enumerate}
+\end{itembox}
+
+
+光の周波数$\nu$と仕事関数$\phi$との関係
+\begin{align*}
+&h\nu\ge\phi\\
+\Leftrightarrow&\nu\ge\frac\phi h=\red{\nu_0}
+\end{align*}
+
+この時の波長は$v=f\lambda$より、
+\begin{align*}
+\lambda_0=\frac c{\nu_0}=\frac{ch}\phi
+\end{align*}
+$c$ : 光速\\
+$\lambda_0$ : \red{限界波長}
+
+
+フェルミ準位にある電子が光電子放出するとき、その速度は最高速度$v_m$となる。
+(他の金属中の電子よりも速い)
+
+エネルギー保存則より、
+\begin{align*}
+\frac12mv_m^2&=E_F+\varepsilon-(E_F+\phi)\\
+&=\varepsilon-\phi\\
+&=h\nu-h\nu_0\\
+&=h(\nu-\nu_0)\\
+\therefore v_m&=\sqrt{\frac{2h}m (\nu-\nu_0)}
+\end{align*}
+
+他の光の周波数に依存し、振幅には依存しない現象
+
+例)日焼け
+\begin{itemize}
+\item 電気ストーブ(赤外線)→日焼けしない(周波数が小さい)
+\item 日光(紫外線)→日焼けする(周波数が大きい)
+\end{itemize}
+
+\end{document}

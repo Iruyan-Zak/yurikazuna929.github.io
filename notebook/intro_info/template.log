@@ -1,0 +1,1342 @@
+This is LuaTeX, Version beta-0.76.0-2013121407 (rev 4627)  (format=lualatex 2015.4.29)  29 JUN 2015 13:54
+ restricted \write18 enabled.
+**template.tex
+(./template.tex
+LaTeX2e <2011/06/27>
+Babel <3.9h> and hyphenation patterns for 11 languages loaded.
+(/usr/share/texlive/texmf-dist/tex/luatex/luatexja/ltjsarticle.cls
+Document Class: ltjsarticle 2014/01/13 
+(/usr/share/texlive/texmf-dist/tex/luatex/luatexja/luatexja.sty
+Package: luatexja 2013/05/14 Japanese Typesetting with LuaTeX
+
+(/usr/share/texlive/texmf-dist/tex/luatex/luatexja/ltj-unicode-ccfix.tex
+and category codes)
+(/usr/share/texlive/texmf-dist/tex/luatex/luatexja/luatexja-core.sty
+Package: luatexja-core 2014/02/01 Core of LuaTeX-ja
+
+(/usr/share/texlive/texmf-dist/tex/luatex/luaotfload/luaotfload.sty
+Package: luaotfload 2014/02/05 v2.4-3 OpenType layout system
+
+(/usr/share/texlive/texmf-dist/tex/luatex/luatexbase/luatexbase.sty
+Package: luatexbase 2013/05/11 v0.6 Resource management for the LuaTeX macro pro
+grammer
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifluatex.sty
+Package: ifluatex 2010/03/01 v1.3 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX detected.
+)
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/luatex.sty
+Package: luatex 2010/03/09 v0.4 LuaTeX basic definition package (HO)
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/infwarerr.sty
+Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/etex-pkg/etex.sty
+Package: etex 1998/03/26 v2.0 eTeX basic definition package (PEB)
+\et@xins=\count79
+)
+\LuT@AllocAttribute=\count277
+\LuT@AllocCatcodeTable=\count278
+\CatcodeTableStack=\count279
+\CatcodeTableIniTeX=\catcodetable1
+\CatcodeTableString=\catcodetable3
+\CatcodeTableOther=\catcodetable5
+\CatcodeTableLaTeX=\catcodetable7
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/luatex-loader.sty
+Package: luatex-loader 2010/03/09 v0.4 Lua module loader (HO)
+
+(/usr/share/texlive/texmf-dist/scripts/oberdiek/oberdiek.luatex.lua)))
+(/usr/share/texlive/texmf-dist/tex/luatex/luatexbase/luatexbase-compat.sty
+Package: luatexbase-compat 2011/05/24 v0.4 Compatibility tools for LuaTeX
+)
+(/usr/share/texlive/texmf-dist/tex/luatex/luatexbase/luatexbase-modutils.sty
+Package: luatexbase-modutils 2013/05/11 v0.6 Module utilities for LuaTeX
+
+(/usr/share/texlive/texmf-dist/tex/luatex/luatexbase/luatexbase-loader.sty
+Package: luatexbase-loader 2013/05/11 v0.6 Lua module loader for LuaTeX
+
+(/usr/share/texlive/texmf-dist/tex/luatex/luatexbase/luatexbase.loader.lua))
+(/usr/share/texlive/texmf-dist/tex/luatex/luatexbase/modutils.lua)
+Lua module: luatexbase-modutils 2013/05/11 0.6 Module utilities for LuaTeX
+)
+(/usr/share/texlive/texmf-dist/tex/luatex/luatexbase/luatexbase-regs.sty
+Package: luatexbase-regs 2011/05/24 v0.4 Registers allocation for LuaTeX
+)
+(/usr/share/texlive/texmf-dist/tex/luatex/luatexbase/luatexbase-attr.sty
+Package: luatexbase-attr 2013/05/11 v0.6 Attributes allocation for LuaTeX
+
+(/usr/share/texlive/texmf-dist/tex/luatex/luatexbase/attr.lua)
+Lua module: luatexbase-attr 2013/05/11 0.6 Attributes allocation for LuaTeX
+\lltxb@attr@unsetvalue=\count280
+)
+(/usr/share/texlive/texmf-dist/tex/luatex/luatexbase/luatexbase-cctb.sty
+Package: luatexbase-cctb 2013/05/11 v0.6 Catcodetable allocation for LuaTeX
+
+(/usr/share/texlive/texmf-dist/tex/luatex/luatexbase/cctb.lua)
+Lua module: luatexbase-cctb 2013/05/11 0.6 Catcodetable allocation for LuaTeX
+\lltxb@catcodetable@alloc=\count281
+\CatcodeTableStack=\count282
+\CatcodeTableIniTeX=\luatexcatcodetable1
+\CatcodeTableString=\luatexcatcodetable3
+\CatcodeTableOther=\luatexcatcodetable5
+\CatcodeTableLaTeX=\luatexcatcodetable7
+\CatcodeTableLaTeXAtLetter=\luatexcatcodetable9
+\CatcodeTableExpl=\luatexcatcodetable11
+)
+(/usr/share/texlive/texmf-dist/tex/luatex/luatexbase/luatexbase-mcb.sty
+Package: luatexbase-mcb 2013/05/11 v0.6 Callback management for LuaTeX
+
+(/usr/share/texlive/texmf-dist/tex/luatex/luatexbase/mcb.lua)
+Lua module: luatexbase-mcb 2013/05/11 0.6 register several functions in a callba
+ck
+))
+(/usr/share/texlive/texmf-dist/tex/luatex/luaotfload/luaotfload.lua)
+Lua module: luaotfload 2014/02/05 2.40004 OpenType layout system.
+luaotfload: push namespace for font loader
+(/usr/share/texlive/texmf-dist/tex/luatex/luaotfload/luaotfload-fontloader.lua)(
+using write cache: /home/yuri/.texmf-var/luatex-cache/generic)(using read cache:
+ /var/lib/texmf/luatex-cache/generic /home/yuri/.texmf-var/luatex-cache/generic)
+luatexbase-attr: luatexbase.attributes["luaotfload@kernpair"] = 1
+luatexbase-attr: luatexbase.attributes["luaotfload@ligacomp"] = 2
+luatexbase-attr: luatexbase.attributes["luaotfload@markbase"] = 3
+luatexbase-attr: luatexbase.attributes["luaotfload@markmark"] = 4
+luatexbase-attr: luatexbase.attributes["luaotfload@markdone"] = 5
+luatexbase-attr: luatexbase.attributes["luaotfload@cursbase"] = 6
+luatexbase-attr: luatexbase.attributes["luaotfload@curscurs"] = 7
+luatexbase-attr: luatexbase.attributes["luaotfload@cursdone"] = 8
+luatexbase-attr: luatexbase.attributes["luaotfload@state"] = 9
+luaotfload: "I am using the merged version of 'luaotfload.lua' here.
+luaotfload:  If you run into problems or experience unexpected
+luaotfload:  behaviour, and if you have ConTeXt installed you can try
+luaotfload:  to delete the file 'luaotfload-merged.lua' as I might
+luaotfload:  then use the possibly updated libraries. The merged
+luaotfload:  version is not supported as it is a frozen instance.
+luaotfload:  Problems can be reported to the ConTeXt mailing list."
+luaotfload: pop namespace from font loader -- non-destructive
+luaotfload: fontloader loaded in 0.053 seconds
+luatexbase-mcb: inserting 'luaotfload.node_processor'
+at position 1 in 'pre_linebreak_filter'
+luatexbase-mcb: inserting 'luaotfload.node_processor'
+at position 1 in 'hpack_filter'
+luatexbase-mcb: inserting 'luaotfload.find_vf_file'
+at position 1 in 'find_vf_file'
+(/usr/share/texlive/texmf-dist/tex/luatex/luaotfload/luaotfload-override.lua)
+(/usr/share/texlive/texmf-dist/tex/luatex/luaotfload/luaotfload-loaders.lua)
+(/usr/share/texlive/texmf-dist/tex/luatex/luaotfload/luaotfload-database.lua)
+luaotfload | db : Shell escape disabled or tput executable missing.
+luaotfload | db : Assuming 79 cols terminal width.
+luaotfload | db : Root cache directory is /home/yuri/.texmf-var/luatex-cache/gen
+eric/names.
+luaotfload | cache : Caching of name: lookups active.
+(/usr/share/texlive/texmf-dist/tex/luatex/luaotfload/luaotfload-colors.lua)
+luatexbase-mcb: creating 'luaotfload.resolve_font' type 4
+luatexbase-mcb: creating 'luaotfload.patch_font' type 4
+luatexbase-mcb: resetting callback 'define_font'
+luatexbase-mcb: inserting 'luaotfload.define_font'
+at position 1 in 'define_font'
+(/usr/share/texlive/texmf-dist/tex/luatex/luaotfload/luaotfload-features.lua)
+(/usr/share/texlive/texmf-dist/tex/luatex/luaotfload/luaotfload-letterspace.lua)
+(/usr/share/texlive/texmf-dist/tex/luatex/luaotfload/luaotfload-auxiliary.lua)
+luatexbase-mcb: inserting 'luaotfload.aux.set_sscale_dimens'
+at position 1 in 'luaotfload.patch_font'
+luatexbase-mcb: inserting 'luaotfload.aux.patch_cambria_domh'
+at position 2 in 'luaotfload.patch_font'
+luatexbase-mcb: inserting 'luaotfload.aux.set_capheight'
+at position 3 in 'luaotfload.patch_font'
+luatexbase-mcb: inserting 'luaotfload.rewrite_fontname'
+at position 4 in 'luaotfload.patch_font'
+luaotfload | aux : start rewriting tfmdata.name field) (/usr/share/texlive/texm
+f-dist/tex/generic/oberdiek/ltxcmds.sty
+Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
+Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO)
+
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifpdf.sty
+Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
+Package ifpdf Info: pdfTeX in PDF mode is detected.
+)
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+
+(/usr/share/texlive/texmf-dist/scripts/oberdiek/pdftexcmds.lua)
+\pdftexcmds@toks=\toks14
+)
+(/usr/share/texlive/texmf-dist/tex/latex/xkeyval/xkeyval.sty
+Package: xkeyval 2012/10/14 v2.6b package option processing (HA)
+
+(/usr/share/texlive/texmf-dist/tex/generic/xkeyval/xkeyval.tex
+\XKV@toks=\toks15
+\XKV@tempa@toks=\toks16
+\XKV@depth=\count283
+File: xkeyval.tex 2012/10/14 v2.6b key=value parser (HA)
+
+(/usr/share/texlive/texmf-dist/tex/generic/xkeyval/keyval.tex)))
+Package luatexja-core Info: using DIRECT node access model.
+\ltj@zw=\dimen256
+\ltj@zh=\dimen257
+\jQ=\dimen258
+\ltj@icflag=\luatexattribute10
+\ltj@curjfnt=\luatexattribute11
+\ltj@origchar=\luatexattribute12
+\ltj@charclass=\luatexattribute13
+\ltj@autospc=\luatexattribute14
+\ltj@autoxspc=\luatexattribute15
+\ltj@yablshift=\luatexattribute16
+\ltj@ykblshift=\luatexattribute17
+\jfam=\luatexattribute18
+\ltj@tempcnta=\count284
+\ltj@kcat0=\luatexattribute19
+\ltj@kcat1=\luatexattribute20
+\ltj@kcat2=\luatexattribute21
+\ltj@kcat3=\luatexattribute22
+\ltj@kcat4=\luatexattribute23
+\ltj@kcat5=\luatexattribute24
+\ltj@kcat6=\luatexattribute25
+
+(/usr/share/texlive/texmf-dist/tex/luatex/lualibs/lualibs.lua)
+Lua module: lualibs 2013/11/03 2.1 ConTeXt Lua standard libraries.
+Lua module: lualibs-extended 2013/11/03 2.1 ConTeXt Lua libraries -- extended co
+llection.
+luatexbase-attr: new user-defined whatsit 1 (luatexja:inhibitglue)
+luatexbase-attr: new user-defined whatsit 2 (luatexja:stack_marker)
+luatexbase-attr: new user-defined whatsit 3 (luatexja:begin_par)
+(/usr/share/texlive/texmf-dist/tex/luatex/luatexja/ltj-base.lua)
+(/usr/share/texlive/texmf-dist/tex/luatex/lualibs/lualibs-lpeg.lua)
+(/usr/share/texlive/texmf-dist/tex/luatex/lualibs/lualibs-os.lua)
+(/usr/share/texlive/texmf-dist/tex/luatex/luatexja/ltj-rmlgbm.lua)(load cache: /
+home/yuri/.texmf-var/luatexja/ltj-cid-auto-adobe-japan1.luc)
+(/usr/share/texlive/texmf-dist/tex/luatex/luatexja/ltj-charrange.lua)
+Lua module: luatexja.charrange 2014/01/19  Handling the range of Japanese charac
+ters
+
+(/usr/share/texlive/texmf-dist/tex/luatex/luatexja/ltj-jfont.lua)
+Lua module: luatexja.jfont 2014/02/01  Loader for Japanese fonts
+luatexbase-mcb: creating 'luatexja.load_jfm' type 2
+luatexbase-mcb: creating 'luatexja.find_char_class' type 2
+luatexbase-mcb: creating 'luatexja.define_jfont' type 2
+(/usr/share/texlive/texmf-dist/tex/luatex/luatexja/ltj-inputbuf.lua)
+luatexbase-mcb: inserting 'ltj.process_input_buffer'
+at position 1 in 'process_input_buffer'
+(/usr/share/texlive/texmf-dist/tex/luatex/luatexja/ltj-stack.lua)
+Lua module: luatexja.stack 2014/01/24  LuaTeX-ja stack system
+
+(/usr/share/texlive/texmf-dist/tex/luatex/luatexja/ltj-pretreat.lua)
+luatexbase-mcb: inserting 'ltj.hyphenate'
+at position 1 in 'hyphenate'
+luatexbase-mcb: inserting 'ltj.hpack_filter_pre'
+at position 1 in 'hpack_filter'
+luatexbase-mcb: inserting 'ltj.pre_linebreak_filter_pre'
+at position 1 in 'pre_linebreak_filter'
+(/usr/share/texlive/texmf-dist/tex/luatex/luatexja/ltj-jfmglue.lua)
+Lua module: luatexja.jfmglue 2014/02/02  Insertion process of JFM glues and kanj
+iskip
+luatexbase-mcb: creating 'luatexja.jfmglue.whatsit_getinfo' type 2
+luatexbase-mcb: creating 'luatexja.jfmglue.whatsit_after' type 2
+luatexbase-mcb: inserting 'luatexja.beginpar.np_info'
+at position 1 in 'luatexja.jfmglue.whatsit_getinfo'
+luatexbase-mcb: inserting 'luatexja.beginpar.np_info_after'
+at position 1 in 'luatexja.jfmglue.whatsit_after'
+(/usr/share/texlive/texmf-dist/tex/luatex/luatexja/ltj-setwidth.lua)
+luatexbase-mcb: creating 'luatexja.set_width' type 2
+(/usr/share/texlive/texmf-dist/tex/luatex/luatexja/ltj-math.lua)
+luatexbase-mcb: inserting 'ltj.mlist_to_hlist'
+at position 1 in 'mlist_to_hlist'
+(/usr/share/texlive/texmf-dist/tex/luatex/luatexja/ltj-tangle.lua)
+Lua module: luatexja.tangle 2011/05/14  
+luatexbase-mcb: inserting 'ltj.pre_linebreak_filter'
+at position 3 in 'pre_linebreak_filter'
+luatexbase-mcb: inserting 'ltj.hpack_filter'
+at position 3 in 'hpack_filter'
+Module luatexbase-mcb warning: several functions in 'define_font',
+(luatexbase-mcb)               only one will be active.
+luatexbase-mcb: inserting 'luatexja.font_callback'
+at position 1 in 'define_font' (/usr/share/texlive/texmf-dist/tex/luatex/luatex
+ja/ltj-base.sty
+Package: ltj-base 2013/05/14
+\ltj@tempcntb=\count285
+\ltj@tempcntc=\count286
+\ltj@tempdima=\dimen259
+\ltj@tempskipa=\skip256
+\ltj@temptoks=\toks17
+)
+\ltj@@stack=\count287
+\ltj@@group@level=\count288
+
+(/usr/share/texlive/texmf-dist/tex/luatex/luatexja/ltj-latex.sty
+Package: ltj-latex 2013/05/14 LaTeX support of LuaTeX-ja
+
+(/usr/share/texlive/texmf-dist/tex/luatex/luatexja/patches/lltjfont.sty
+Package: lltjfont 2014/01/23 Patch to NFSS2 for LuaTeX-ja
+\Cht=\dimen260
+\cht=\dimen261
+\Cdp=\dimen262
+\cdp=\dimen263
+\Cwd=\dimen264
+\cwd=\dimen265
+\Cvs=\dimen266
+\cvs=\dimen267
+\Chs=\dimen268
+\chs=\dimen269
+\cHT=\dimen270
+\tstrutbox=\box256
+\zstrutbox=\box257
+LaTeX Info: Redefining \selectfont on input line 259.
+\adjust@box=\box258
+\adjust@dimen=\dimen271
+LaTeX Info: Redefining \fontencoding on input line 377.
+LaTeX Info: Redefining \fontfamily on input line 421.
+LaTeX Info: Redefining \fontseries on input line 475.
+LaTeX Info: Redefining \fontshape on input line 478.
+LaTeX Info: Redefining \normalfont on input line 490.
+)
+(/usr/share/texlive/texmf-dist/tex/luatex/luatexja/patches/lltjdefs.sty
+Package: lltjdefs 2013/06/12 Default font settings of LuaTeX-ja
+LaTeX Font Info:    Font shape `JY3/mc/m/n' will be
+(Font)              scaled to size 9.6222pt on input line 34.
+luaotfload | db : Font names database loaded
+(/usr/share/texlive/texmf-dist/tex/luatex/luatexja/jfm-ujis.lua)
+luaotfload | load : auto-selecting default features for script: dflt
+\symmincho=\mathgroup4
+LaTeX Font Info:    Overwriting symbol font `mincho' in version `bold'
+(Font)                  JY3/mc/m/n --> JY3/gt/m/n on input line 43.
+)
+(/usr/share/texlive/texmf-dist/tex/luatex/luatexja/patches/lltjcore.sty
+Package: lltjcore 2013/05/14 Patch to LaTeX2e Kernel for LuaTeX-ja
+\@tombowwidth=\dimen272
+\@TL=\box259
+\@Tl=\box260
+\@TC=\box261
+\@TR=\box262
+\@Tr=\box263
+\@BL=\box264
+\@Bl=\box265
+\@BC=\box266
+\@BR=\box267
+\@Br=\box268
+\@CL=\box269
+\@CR=\box270
+luaotfload | load : auto-selecting default features for script: dflt
+\@bannertoken=\toks18
+\@@paperheight=\dimen273
+\@@paperwidth=\dimen274
+\@@topmargin=\dimen275
+\hour=\count289
+\minute=\count290
+))
+\ltj@temp@cctb=\luatexcatcodetable13
+)
+(/usr/share/texlive/texmf-dist/tex/luatex/luatexja/luatexja-compat.sty
+Package: luatexja-compat 2013/12/22 Compatibility with pTeX
+
+(/usr/share/texlive/texmf-dist/tex/luatex/luatexja/ltj-compat.lua)(load cache: /
+home/yuri/.texmf-var/luatexja/ltj-jisx0208.luc)
+\hour=\count291
+\minute=\count292
+))
+LaTeX Info: Redefining \rmfamily on input line 315.
+LaTeX Info: Redefining \sffamily on input line 318.
+LaTeX Info: Redefining \ttfamily on input line 321.
+LaTeX Font Info:    Font shape `JY3/mc/m/n' will be
+(Font)              scaled to size 9.24866pt on input line 377.
+\fullwidth=\dimen276
+LaTeX Font Info:    Font shape `JY3/mc/m/n' will be
+(Font)              scaled to size 7.39893pt on input line 516.
+luaotfload | load : auto-selecting default features for script: dflt
+\c@part=\count293
+\c@section=\count294
+\c@subsection=\count295
+\c@subsubsection=\count296
+\c@paragraph=\count297
+\c@subparagraph=\count298
+\@abstractbox=\box271
+\c@figure=\count299
+\c@table=\count300
+\abovecaptionskip=\skip257
+\belowcaptionskip=\skip258
+LaTeX Info: Redefining \mc on input line 1116.
+LaTeX Info: Redefining \gt on input line 1117.
+\js@tocl@width=\dimen277
+\@lnumwidth=\dimen278
+\bibindent=\dimen279
+LaTeX Info: Redefining \TeX on input line 1450.
+LaTeX Info: Redefining \LaTeX on input line 1476.
+LaTeX Info: Redefining \LaTeXe on input line 1501.
+\heisei=\count301
+)
+(/usr/share/texlive/texmf-dist/tex/latex/geometry/geometry.sty
+Package: geometry 2010/09/12 v5.6 Page Geometry
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifvtex.sty
+Package: ifvtex 2010/03/01 v1.5 Detect VTeX and its facilities (HO)
+Package ifvtex Info: VTeX not detected.
+)
+(/usr/share/texlive/texmf-dist/tex/generic/ifxetex/ifxetex.sty
+Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
+)
+\Gm@cnth=\count302
+\Gm@cntv=\count303
+\c@Gm@tempcnt=\count304
+\Gm@bindingoffset=\dimen280
+\Gm@wd@mp=\dimen281
+\Gm@odd@mp=\dimen282
+\Gm@even@mp=\dimen283
+\Gm@layoutwidth=\dimen284
+\Gm@layoutheight=\dimen285
+\Gm@layouthoffset=\dimen286
+\Gm@layoutvoffset=\dimen287
+\Gm@dimlist=\toks19
+)
+(/usr/share/texlive/texmf-dist/tex/luatex/luatexja/addons/luatexja-fontspec.sty
+Package: luatexja-fontspec 2014/01/23 fontspec support of LuaTeX-ja
+(/usr/share/texlive/texmf-dist/tex/latex/fontspec/fontspec.sty
+Package: fontspec 2013/05/20 v2.3c Font selection for XeLaTeX and LuaLaTeX
+
+(/usr/share/texlive/texmf-dist/tex/latex/l3kernel/expl3.sty
+(/usr/share/texlive/texmf-dist/tex/latex/l3kernel/l3names.sty
+(/usr/share/texlive/texmf-dist/tex/latex/l3kernel/l3bootstrap.sty
+Package: l3bootstrap 2014/01/04 v4640 L3 Experimental bootstrap code
+)
+Package: l3names 2014/01/04 v4640 L3 Namespace for primitives
+)
+Package: expl3 2014/01/07 v4646 L3 Experimental code bundle wrapper
+
+(/usr/share/texlive/texmf-dist/tex/latex/l3kernel/l3basics.sty
+Package: l3basics 2014/01/04 v4642 L3 Basic definitions
+)
+(/usr/share/texlive/texmf-dist/tex/latex/l3kernel/l3expan.sty
+Package: l3expan 2014/01/04 v4642 L3 Argument expansion
+)
+(/usr/share/texlive/texmf-dist/tex/latex/l3kernel/l3tl.sty
+Package: l3tl 2013/12/27 v4625 L3 Token lists
+)
+(/usr/share/texlive/texmf-dist/tex/latex/l3kernel/l3seq.sty
+Package: l3seq 2013/12/14 v4623 L3 Sequences and stacks
+)
+(/usr/share/texlive/texmf-dist/tex/latex/l3kernel/l3int.sty
+Package: l3int 2013/08/02 v4583 L3 Integers
+\c_max_int=\count305
+\l_tmpa_int=\count306
+\l_tmpb_int=\count307
+\g_tmpa_int=\count308
+\g_tmpb_int=\count309
+)
+(/usr/share/texlive/texmf-dist/tex/latex/l3kernel/l3quark.sty
+Package: l3quark 2013/12/14 v4623 L3 Quarks
+)
+(/usr/share/texlive/texmf-dist/tex/latex/l3kernel/l3prg.sty
+Package: l3prg 2014/01/04 v4642 L3 Control structures
+\g__prg_map_int=\count310
+)
+(/usr/share/texlive/texmf-dist/tex/latex/l3kernel/l3clist.sty
+Package: l3clist 2013/07/28 v4581 L3 Comma separated lists
+)
+(/usr/share/texlive/texmf-dist/tex/latex/l3kernel/l3token.sty
+Package: l3token 2013/08/25 v4587 L3 Experimental token manipulation
+)
+(/usr/share/texlive/texmf-dist/tex/latex/l3kernel/l3prop.sty
+Package: l3prop 2013/12/14 v4623 L3 Property lists
+)
+(/usr/share/texlive/texmf-dist/tex/latex/l3kernel/l3msg.sty
+Package: l3msg 2013/07/28 v4581 L3 Messages
+)
+(/usr/share/texlive/texmf-dist/tex/latex/l3kernel/l3file.sty
+Package: l3file 2013/10/13 v4596 L3 File and I/O operations
+\l_iow_line_count_int=\count311
+\l__iow_target_count_int=\count312
+\l__iow_current_line_int=\count313
+\l__iow_current_word_int=\count314
+\l__iow_current_indentation_int=\count315
+)
+(/usr/share/texlive/texmf-dist/tex/latex/l3kernel/l3skip.sty
+Package: l3skip 2013/07/28 v4581 L3 Dimensions and skips
+\c_zero_dim=\dimen288
+\c_max_dim=\dimen289
+\l_tmpa_dim=\dimen290
+\l_tmpb_dim=\dimen291
+\g_tmpa_dim=\dimen292
+\g_tmpb_dim=\dimen293
+\c_zero_skip=\skip259
+\c_max_skip=\skip260
+\l_tmpa_skip=\skip261
+\l_tmpb_skip=\skip262
+\g_tmpa_skip=\skip263
+\g_tmpb_skip=\skip264
+\c_zero_muskip=\muskip10
+\c_max_muskip=\muskip11
+\l_tmpa_muskip=\muskip12
+\l_tmpb_muskip=\muskip13
+\g_tmpa_muskip=\muskip14
+\g_tmpb_muskip=\muskip15
+)
+(/usr/share/texlive/texmf-dist/tex/latex/l3kernel/l3keys.sty
+Package: l3keys 2013/12/08 v4614 L3 Experimental key-value interfaces
+\g__keyval_level_int=\count316
+\l_keys_choice_int=\count317
+)
+(/usr/share/texlive/texmf-dist/tex/latex/l3kernel/l3fp.sty
+Package: l3fp 2014/01/04 v4642 L3 Floating points
+\c__fp_leading_shift_int=\count318
+\c__fp_middle_shift_int=\count319
+\c__fp_trailing_shift_int=\count320
+\c__fp_big_leading_shift_int=\count321
+\c__fp_big_middle_shift_int=\count322
+\c__fp_big_trailing_shift_int=\count323
+\c__fp_Bigg_leading_shift_int=\count324
+\c__fp_Bigg_middle_shift_int=\count325
+\c__fp_Bigg_trailing_shift_int=\count326
+)
+(/usr/share/texlive/texmf-dist/tex/latex/l3kernel/l3box.sty
+Package: l3box 2013/07/28 v4581 L3 Experimental boxes
+\c_empty_box=\box272
+\l_tmpa_box=\box273
+\l_tmpb_box=\box274
+\g_tmpa_box=\box275
+\g_tmpb_box=\box276
+)
+(/usr/share/texlive/texmf-dist/tex/latex/l3kernel/l3coffins.sty
+Package: l3coffins 2013/12/14 v4624 L3 Coffin code layer
+\l__coffin_internal_box=\box277
+\l__coffin_internal_dim=\dimen294
+\l__coffin_offset_x_dim=\dimen295
+\l__coffin_offset_y_dim=\dimen296
+\l__coffin_x_dim=\dimen297
+\l__coffin_y_dim=\dimen298
+\l__coffin_x_prime_dim=\dimen299
+\l__coffin_y_prime_dim=\dimen300
+\c_empty_coffin=\box278
+\l__coffin_aligned_coffin=\box279
+\l__coffin_aligned_internal_coffin=\box280
+\l_tmpa_coffin=\box281
+\l_tmpb_coffin=\box282
+\l__coffin_display_coffin=\box283
+\l__coffin_display_coord_coffin=\box284
+\l__coffin_display_pole_coffin=\box285
+\l__coffin_display_offset_dim=\dimen301
+\l__coffin_display_x_dim=\dimen302
+\l__coffin_display_y_dim=\dimen303
+)
+(/usr/share/texlive/texmf-dist/tex/latex/l3kernel/l3color.sty
+Package: l3color 2012/08/29 v4156 L3 Experimental color support
+)
+(/usr/share/texlive/texmf-dist/tex/latex/l3kernel/l3luatex.sty
+Package: l3luatex 2013/07/28 v4581 L3 Experimental LuaTeX-specific functions
+\g__cctab_allocate_int=\count327
+\g__cctab_stack_int=\count328
+\c_code_cctab=\catcodetable9
+)
+(/usr/share/texlive/texmf-dist/tex/latex/l3kernel/l3candidates.sty
+Package: l3candidates 2014/01/06 v4643 L3 Experimental additions to l3kernel
+\l__box_top_dim=\dimen304
+\l__box_bottom_dim=\dimen305
+\l__box_left_dim=\dimen306
+\l__box_right_dim=\dimen307
+\l__box_top_new_dim=\dimen308
+\l__box_bottom_new_dim=\dimen309
+\l__box_left_new_dim=\dimen310
+\l__box_right_new_dim=\dimen311
+\l__box_internal_box=\box286
+\l__coffin_bounding_shift_dim=\dimen312
+\l__coffin_left_corner_dim=\dimen313
+\l__coffin_right_corner_dim=\dimen314
+\l__coffin_bottom_corner_dim=\dimen315
+\l__coffin_top_corner_dim=\dimen316
+\l__coffin_scaled_total_height_dim=\dimen317
+\l__coffin_scaled_width_dim=\dimen318
+))
+(/usr/share/texlive/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
+Package: xparse 2013/12/31 v4634 L3 Experimental document command parser
+\l__xparse_current_arg_int=\count329
+\l__xparse_m_args_int=\count330
+\l__xparse_mandatory_args_int=\count331
+\l__xparse_processor_int=\count332
+\l__xparse_v_nesting_int=\count333
+)
+(/usr/share/texlive/texmf-dist/tex/latex/fontspec/fontspec.lua)
+Lua module: fontspec 2013/05/20 2.3c Advanced font selection for LuaLaTeX.
+\l_fontspec_script_int=\count334
+\l_fontspec_language_int=\count335
+\l_fontspec_strnum_int=\count336
+\l_fontspec_tmpa_dim=\dimen319
+\l_fontspec_tmpb_dim=\dimen320
+\l_fontspec_tmpc_dim=\dimen321
+Variant \tl_gset:cV already defined; not changing it on line 69
+
+(/usr/share/texlive/texmf-dist/tex/latex/fontspec/fontspec-patches.sty
+Package: fontspec-patches 2013/05/20 v2.3c Font selection for XeLaTeX and LuaLaT
+eX
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/fixltx2e.sty
+Package: fixltx2e 2006/09/13 v1.1m fixes to LaTeX
+LaTeX Info: Redefining \em on input line 420.
+)
+LaTeX Info: Redefining \em on input line 22.
+LaTeX Info: Redefining \emph on input line 30.
+LaTeX Info: Redefining \- on input line 33.
+
+*************************************************
+* LaTeX warning: "xparse/redefine-command"
+* 
+* Redefining document command \oldstylenums with arg. spec. 'm' on line 128.
+*************************************************
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining document command \liningnums with arg. spec. 'm' on line 132.
+.................................................
+) (/usr/share/texlive/texmf-dist/tex/latex/fontspec/fontspec-luatex.sty
+Package: fontspec-luatex 2013/05/20 v2.3c Font selection for XeLaTeX and LuaLaTe
+X
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/fontenc.sty
+Package: fontenc 2005/09/27 v1.99g Standard LaTeX package
+
+(/usr/share/texlive/texmf-dist/tex/latex/euenc/eu2enc.def
+File: eu2enc.def 2010/05/27 v0.1h Experimental Unicode font encodings
+)
+LaTeX Font Info:    Try loading font information for EU2+lmr on input line 100.
+
+(/usr/share/texlive/texmf-dist/tex/latex/euenc/eu2lmr.fd
+File: eu2lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+luaotfload | load : auto-selecting default features for script: latn
+luaotfload | load : no defaults for script "latn", falling back to "dflt"(load l
+uc: /home/yuri/.texmf-var/luatex-cache/generic/fonts/otf/lmroman10-regular.luc))
+(/usr/share/texlive/texmf-dist/tex/xelatex/xunicode/xunicode.sty
+File: xunicode.sty 2011/09/09 v0.981 provides access to latin accents and many o
+ther characters in Unicode lower plane
+
+(/usr/share/texmf/tex/latex/tipa/t3enc.def
+File: t3enc.def 2001/12/31 T3 encoding
+LaTeX Font Info:    Font shape `JY3/mc/m/sl' in size <10> not available
+(Font)              Font shape `JY3/mc/m/n' tried instead on input line 316.
+LaTeX Font Info:    Font shape `JY3/mc/m/n' will be
+(Font)              scaled to size 9.24866pt on input line 316.
+luaotfload | load : auto-selecting default features for script: latn
+luaotfload | load : no defaults for script "latn", falling back to "dflt"(load l
+uc: /home/yuri/.texmf-var/luatex-cache/generic/fonts/otf/lmromanslant10-regular.
+luc)
+LaTeX Font Info:    Font shape `JY3/mc/m/it' in size <10> not available
+(Font)              Font shape `JY3/mc/m/n' tried instead on input line 316.
+LaTeX Font Info:    Font shape `JY3/mc/m/n' will be
+(Font)              scaled to size 9.24866pt on input line 316.
+luaotfload | load : auto-selecting default features for script: latn
+luaotfload | load : no defaults for script "latn", falling back to "dflt"(load l
+uc: /home/yuri/.texmf-var/luatex-cache/generic/fonts/otf/lmroman10-italic.luc)
+LaTeX Font Info:    Font shape `JY3/mc/bx/n' in size <10> not available
+(Font)              Font shape `JY3/gt/m/n' tried instead on input line 356.
+LaTeX Font Info:    Font shape `JY3/gt/m/n' will be
+(Font)              scaled to size 9.24866pt on input line 356.
+luaotfload | load : auto-selecting default features for script: latn
+luaotfload | load : no defaults for script "latn", falling back to "dflt"(load l
+uc: /home/yuri/.texmf-var/luatex-cache/generic/fonts/otf/lmroman10-bold.luc)
+LaTeX Font Info:    Try loading font information for EU2+lmss on input line 357.
+
+
+(/usr/share/texlive/texmf-dist/tex/latex/euenc/eu2lmss.fd
+File: eu2lmss.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+luaotfload | load : auto-selecting default features for script: latn
+luaotfload | load : no defaults for script "latn", falling back to "dflt"(load l
+uc: /home/yuri/.texmf-var/luatex-cache/generic/fonts/otf/lmsans10-regular.luc))
+\tipaTiiicode=\count337
+\tipasavetokens=\toks20
+\tipachecktokens=\toks21
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/graphics.cfg
+File: graphics.cfg 2010/04/23 v1.9 graphics configuration of TeX Live
+)
+Package graphics Info: Driver file: pdftex.def on input line 91.
+
+(/usr/share/texlive/texmf-dist/tex/latex/pdftex-def/pdftex.def
+File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
+\Gread@gobject=\count338
+))
+\Gin@req@height=\dimen322
+\Gin@req@width=\dimen323
+))
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining document command \fontspec with arg. spec. 'O{}m' on line 44.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining document command \setmainfont with arg. spec. 'O{}m' on line 49.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining document command \setsansfont with arg. spec. 'O{}m' on line 54.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining document command \setmonofont with arg. spec. 'O{}m' on line 59.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining document command \setmathrm with arg. spec. 'O{}m' on line 68.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining document command \setboldmathrm with arg. spec. 'O{}m' on line 72.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining document command \setmathsf with arg. spec. 'O{}m' on line 76.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining document command \setmathtt with arg. spec. 'O{}m' on line 80.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining document command \newfontfamily with arg. spec. 'mO{}m' on line 99.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining document command \newfontface with arg. spec. 'mO{}m' on line 103.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining document command \defaultfontfeatures with arg. spec. 'om' on line
+. 111.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining document command \addfontfeatures with arg. spec. 'm' on line 147.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining document command \newfontfeature with arg. spec. 'mm' on line 159.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining document command \newAATfeature with arg. spec. 'mmmm' on line 167.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining document command \newICUfeature with arg. spec. 'mmm' on line 175.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining document command \aliasfontfeature with arg. spec. 'mm' on line
+. 204.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining document command \aliasfontfeatureoption with arg. spec. 'mmm' on
+. line 206.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining document command \newfontscript with arg. spec. 'mm' on line 211.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining document command \newfontlanguage with arg. spec. 'mm' on line 238.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining document command \DeclareFontsExtensions with arg. spec. 'm' on
+. line 259.
+.................................................
+Variant \prop_gput:cnV already defined; not changing it on line 586
+Variant \prop_gput:cnx already defined; not changing it on line 587
+\l_fontspec_tmp_int=\count339
+LaTeX Info: Redefining \itshape on input line 2008.
+LaTeX Info: Redefining \slshape on input line 2013.
+LaTeX Info: Redefining \scshape on input line 2018.
+LaTeX Info: Redefining \upshape on input line 2023.
+
+(/usr/share/texlive/texmf-dist/tex/latex/fontspec/fontspec.cfg)))
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining document command \jfontspec with arg. spec. 'O{}m' on line 103.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining document command \setmainjfont with arg. spec. 'O{}m' on line 110.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining document command \setsansjfont with arg. spec. 'O{}m' on line 116.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining document command \newjfontfamily with arg. spec. 'mO{}m' on line
+. 125.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining document command \newjfontface with arg. spec. 'mO{}m' on line 129.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining document command \defaultjfontfeatures with arg. spec. 'om' on line
+. 138.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining document command \addjfontfeatures with arg. spec. 'm' on line 166.
+.................................................
+LaTeX Info: Redefining \fontfamily on input line 176.
+)
+(/usr/share/texlive/texmf-dist/tex/luatex/luatexja/addons/luatexja-preset.sty
+Package: luatexja-preset 2013/10/28 Japanese font presets
+\l_ltjpreset_deluxe_int=\count340
+
+*************************************************
+* luatexja-preset warning: "scale"
+* 
+* Japanese fonts will be scaled by 0.92486572265625.
+*************************************************
+*************************************************
+* ltj-fontspec warning: "addjfontfeatures-ignored"
+* 
+* \addjfontfeature(s) ignored;
+* it cannot be used with a font that wasn't selected by luatexja-fontspec.
+*************************************************
+\g__file_internal_ior=\read1
+luaotfload | load : auto-selecting default features for script: dflt(load luc: /
+home/yuri/.texmf-var/luatex-cache/generic/fonts/otf/ipaexm.luc)
+luaotfload | load : auto-selecting default features for script: dflt
+luaotfload: font no 29 (IPAexMincho) defines feature halt for script latn
+luaotfload: font no 29 (IPAexMincho) defines feature halt for script latn
+\g_fontspec_family_IPAExMincho_int=\count341
+luaotfload | load : auto-selecting default features for script: dflt
+luaotfload: font no 29 (IPAexMincho) does not define feature smcp for script lat
+n with language dflt
+luaotfload: no font with id 29
+luaotfload | load : auto-selecting default features for script: dflt(load luc: /
+home/yuri/.texmf-var/luatex-cache/generic/fonts/otf/ipaexg.luc)
+luaotfload: font no 30 (IPAexGothic) does not define feature smcp for script lat
+n with language dflt
+luaotfload: no font with id 30
+luaotfload | load : auto-selecting default features for script: dflt
+luaotfload | load : auto-selecting default features for script: dflt
+.................................................
+. fontspec info: "no-font-shape"
+. 
+. Could not resolve font IPAExMincho/I (it probably doesn't exist).
+.................................................
+luaotfload | load : auto-selecting default features for script: dflt
+luaotfload | load : auto-selecting default features for script: dflt
+.................................................
+. fontspec info: "no-font-shape"
+. 
+. Could not resolve font IPAExGothic/I (it probably doesn't exist).
+.................................................
+.................................................
+. fontspec info: "defining-font"
+. 
+. Font family 'IPAExMincho(0)' created for font 'IPAExMincho' with options
+. [JFM=ujis,Scale=0.92486572265625,Kerning=Off,BoldFont=IPAExGothic,,JFM=ujis].
+. 
+. This font family consists of the following shapes:
+. 
+. * 'normal' with NFSS spec.:
+. 
+. <->s*[0.92486572265625]"IPAExMincho:mode=node;script=latn;language=DFLT;jfm=uj
+is;-kern;jfm=ujis;"
+. 
+. * 'bold' with NFSS spec.:
+. 
+. <->s*[0.92486572265625]"IPAExGothic:mode=node;script=latn;language=DFLT;jfm=uj
+is;-kern;jfm=ujis;"
+.................................................
+LaTeX Font Info:    Redeclaring symbol font `mincho' on input line 322.
+LaTeX Font Info:    Overwriting symbol font `mincho' in version `normal'
+(Font)                  JY3/mc/m/n --> JY3/IPAExMincho(0)/m/n on input line 322.
+
+LaTeX Font Info:    Overwriting symbol font `mincho' in version `bold'
+(Font)                  JY3/gt/m/n --> JY3/IPAExMincho(0)/m/n on input line 322.
+
+LaTeX Font Info:    Overwriting symbol font `mincho' in version `bold'
+(Font)                  JY3/IPAExMincho(0)/m/n --> JY3/IPAExMincho(0)/bx/n on in
+put line 322.
+LaTeX Font Info:    Font shape `JY3/IPAExMincho(0)/m/n' will be
+(Font)              scaled to size 9.24866pt on input line 322.
+luaotfload | load : auto-selecting default features for script: latn
+luaotfload | load : no defaults for script "latn", falling back to "dflt"
+luaotfload | load : auto-selecting default features for script: dflt
+luaotfload | load : auto-selecting default features for script: dflt
+luaotfload: font no 30 (IPAexGothic) defines feature halt for script latn
+luaotfload: font no 30 (IPAexGothic) defines feature halt for script latn
+\g_fontspec_family_IPAExGothic_int=\count342
+luaotfload | load : auto-selecting default features for script: dflt
+luaotfload: font no 30 (IPAexGothic) does not define feature smcp for script lat
+n with language dflt
+luaotfload: no font with id 30
+luaotfload | load : auto-selecting default features for script: dflt
+luaotfload: font no 30 (IPAexGothic) does not define feature smcp for script lat
+n with language dflt
+luaotfload: no font with id 30
+luaotfload | load : auto-selecting default features for script: dflt
+luaotfload | load : auto-selecting default features for script: dflt
+.................................................
+. fontspec info: "no-font-shape"
+. 
+. Could not resolve font IPAExGothic/I (it probably doesn't exist).
+.................................................
+luaotfload | load : auto-selecting default features for script: dflt
+luaotfload | load : auto-selecting default features for script: dflt
+.................................................
+. fontspec info: "no-font-shape"
+. 
+. Could not resolve font IPAExGothic/I (it probably doesn't exist).
+.................................................
+.................................................
+. fontspec info: "defining-font"
+. 
+. Font family 'IPAExGothic(0)' created for font 'IPAExGothic' with options
+. [JFM=ujis,Scale=0.92486572265625,Kerning=Off,BoldFont=IPAExGothic,,JFM=ujis].
+. 
+. This font family consists of the following shapes:
+. 
+. * 'normal' with NFSS spec.:
+. 
+. <->s*[0.92486572265625]"IPAExGothic:mode=node;script=latn;language=DFLT;jfm=uj
+is;-kern;jfm=ujis;"
+. 
+. * 'bold' with NFSS spec.:
+. 
+. <->s*[0.92486572265625]"IPAExGothic:mode=node;script=latn;language=DFLT;jfm=uj
+is;-kern;jfm=ujis;"
+.................................................
+LaTeX Font Info:    Redeclaring math alphabet \mathgt on input line 327.
+LaTeX Font Info:    Overwriting math alphabet `\mathgt' in version `normal'
+(Font)                  JY3/gt/m/n --> JY3/IPAExGothic(0)/m/n on input line 327.
+
+LaTeX Font Info:    Overwriting math alphabet `\mathgt' in version `bold'
+(Font)                  JY3/gt/m/n --> JY3/IPAExGothic(0)/m/n on input line 327.
+
+)
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2013/01/14 v2.14 AMS math features
+\@mathmargin=\skip265
+
+For additional information on amsmath, use the `?' option.
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amstext.sty
+Package: amstext 2000/06/29 v2.01
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0
+\@emptytoks=\toks22
+\ex@=\dimen324
+))
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d
+\pmbraise@=\dimen325
+)
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty
+Package: amsopn 1999/12/14 v2.01 operator names
+)
+\inf@bad=\count343
+LaTeX Info: Redefining \frac on input line 210.
+\uproot@=\count344
+\leftroot@=\count345
+LaTeX Info: Redefining \overline on input line 306.
+\classnum@=\count346
+\DOTSCASE@=\count347
+LaTeX Info: Redefining \ldots on input line 378.
+LaTeX Info: Redefining \dots on input line 381.
+LaTeX Info: Redefining \cdots on input line 466.
+\Mathstrutbox@=\box287
+\strutbox@=\box288
+\big@size=\dimen326
+LaTeX Font Info:    Redeclaring font encoding OML on input line 566.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 567.
+\macc@depth=\count348
+\c@MaxMatrixCols=\count349
+\dotsspace@=\muskip16
+\c@parentequation=\count350
+\dspbrk@lvl=\count351
+\tag@help=\toks23
+\row@=\count352
+\column@=\count353
+\maxfields@=\count354
+\andhelp@=\toks24
+\eqnshift@=\dimen327
+\alignsep@=\dimen328
+\tagshift@=\dimen329
+\tagwidth@=\dimen330
+\totwidth@=\dimen331
+\lineht@=\dimen332
+\@envbody=\toks25
+\multlinegap=\skip266
+\multlinetaggap=\skip267
+\mathdisplay@stack=\toks26
+LaTeX Info: Redefining \[ on input line 2665.
+LaTeX Info: Redefining \] on input line 2666.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/mh/empheq.sty
+Package: empheq 2013/02/12 v2.13 Emphasizing equations
+
+(/usr/share/texlive/texmf-dist/tex/latex/mh/mhsetup.sty
+Package: mhsetup 2010/01/21 v1.2a programming setup (MH)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/mh/mathtools.sty
+Package: mathtools 2013/02/12 v1.13 mathematical typesetting tools
+
+(/usr/share/texlive/texmf-dist/tex/latex/tools/calc.sty
+Package: calc 2007/08/22 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count355
+\calc@Bcount=\count356
+\calc@Adimen=\dimen333
+\calc@Bdimen=\dimen334
+\calc@Askip=\skip268
+\calc@Bskip=\skip269
+LaTeX Info: Redefining \setlength on input line 76.
+LaTeX Info: Redefining \addtolength on input line 77.
+\calc@Ccount=\count357
+\calc@Cskip=\skip270
+)
+LaTeX Info: Thecontrolsequence`\('isalreadyrobust on input line 129.
+LaTeX Info: Thecontrolsequence`\)'isalreadyrobust on input line 129.
+LaTeX Info: Thecontrolsequence`\['isalreadyrobust on input line 129.
+LaTeX Info: Thecontrolsequence`\]'isalreadyrobust on input line 129.
+\g_MT_multlinerow_int=\count358
+\l_MT_multwidth_dim=\dimen335
+\origjot=\skip271
+\l_MT_shortvdotswithinadjustabove_dim=\dimen336
+\l_MT_shortvdotswithinadjustbelow_dim=\dimen337
+\l_MT_above_intertext_sep=\dimen338
+\l_MT_below_intertext_sep=\dimen339
+\l_MT_above_shortintertext_sep=\dimen340
+\l_MT_below_shortintertext_sep=\dimen341
+)
+\l_EQ_equationtype_int=\count359
+\l_EQ_alignmentmode_int=\count360
+\l_EQ_totalwidth_dim=\dimen342
+\l_EQ_displaywidth_dim=\dimen343
+\l_EQ_temp_linewidth_dim=\dimen344
+\EmphEqdelimitershortfall=\dimen345
+\EmphEqdelimiterfactor=\count361
+\g_EQ_toptag_height_dim=\dimen346
+\g_EQ_bottomtag_depth_dim=\dimen347
+\g_EQ_toprow_height_dim=\dimen348
+\g_EQ_bottomrow_depth_dim=\dimen349
+\g_EQ_widesttag_dim=\dimen350
+\EQ_mathdisplay_box=\box289
+\EQ_tag_box=\box290
+\g_EQ_temprow_int=\count362
+)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/color.sty
+Package: color 2005/11/14 v1.0j Standard LaTeX Color (DPC)
+
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/color.cfg
+File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
+)
+Package color Info: Driver file: pdftex.def on input line 130.
+)
+(/usr/share/texlive/texmf-dist/tex/platex/base/ascmac.sty
+(/usr/share/texlive/texmf-dist/tex/platex/base/tascmac.sty
+\@savetbaselineshift=\dimen351
+\@saveybaselineshift=\dimen352
+luaotfload | load : auto-selecting default features for script: dflt
+\scb@x=\box291
+\scscb@x=\box292
+\@bw=\dimen353
+\@nbox=\box293
+\@nbody=\box294
+\@scw=\dimen354
+\@itemh=\dimen355
+\@iboxpos=\toks27
+\@iboxstr=\box295
+\@bwsp=\box296
+\@@bwsp=\box297
+\@bcal=\count363
+\shaderule=\dimen356
+))
+(/usr/share/texmf/tex/latex/usrdef/mymacro.sty)
+\tbaselineshift=\dimen357
+ (./template.aux)
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for JY3/mc/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for EU2/lmr/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for T3/cmr/m/n on input line 11.
+LaTeX Font Info:    Try loading font information for T3+cmr on input line 11.
+
+(/usr/share/texmf/tex/latex/tipa/t3cmr.fd
+File: t3cmr.fd 2001/12/31 TIPA font definitions
+)
+LaTeX Font Info:    ... okay on input line 11.
+
+(/usr/share/texlive/texmf-dist/tex/luatex/luatexja/patches/lltjp-fontspec.sty
+Package: lltjp-fontspec 2013/05/14 Patch to fontspec for LuaTeX-ja
+)
+(/usr/share/texlive/texmf-dist/tex/luatex/luatexja/patches/lltjp-xunicode.sty
+Package: lltjp-xunicode 2013/05/14 Patch to xunicode for LuaTeX-ja
+
+(/usr/share/texlive/texmf-dist/tex/xelatex/xunicode/xunicode.sty
+File: xunicode.sty 2011/09/09 v0.981 provides access to latin accents and many o
+ther characters in Unicode lower plane
+
+*** Reloading Xunicode for encoding 'EU2' ***
+))
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+*geometry* verbose mode - [ preamble ] result:
+* driver: pdftex
+* paper: <default>
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: 
+* h-part:(L,W,R)=(19.75885pt, 375.4173pt, 19.75885pt)
+* v-part:(T,H,B)=(29.63824pt, 527.56015pt, 29.63824pt)
+* \paperwidth=597.50244pt
+* \paperheight=845.02441pt
+* \textwidth=375.4173pt
+* \textheight=527.56015pt
+* \oddsidemargin=-52.51114pt
+* \evensidemargin=-52.51114pt
+* \topmargin=-72.39413pt
+* \headheight=20.0pt
+* \headsep=9.76239pt
+* \topskip=10.0pt
+* \footskip=19.76239pt
+* \marginparwidth=0.0pt
+* \marginparsep=18.49731pt
+* \columnsep=18.49731pt
+* \skip\footins=16.0pt plus 5.0pt minus 2.0pt
+* \hoffset=22.08383pt
+* \voffset=22.08383pt
+* \mag=1440
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+(/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count364
+\scratchdimen=\dimen358
+\scratchbox=\box298
+\nofMPsegments=\count365
+\nofMParguments=\count366
+\everyMPshowfont=\toks28
+\MPscratchCnt=\count367
+\MPscratchDim=\dimen359
+\MPnumerator=\count368
+\makeMPintoPDFobject=\count369
+\everyMPtoPDFconversion=\toks29
+) (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
+
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/grfext.sty
+Package: grfext 2010/08/19 v1.1 Manage graphics extensions (HO)
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/kvdefinekeys.sty
+Package: kvdefinekeys 2011/04/07 v1.3 Define keys (HO)
+))
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+Package: kvoptions 2011/06/30 v3.11 Key value format for package options (HO)
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
+Package: kvsetkeys 2012/04/25 v1.16 Key value parser (HO)
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/etexcmds.sty
+Package: etexcmds 2011/02/16 v1.5 Avoid name clashes with e-TeX commands (HO)
+)))
+Package grfext Info: Graphics extension search list:
+(grfext)             [.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPEG
+,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 452.
+
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
+
+))
+.................................................
+. fontspec info: "setup-math"
+. 
+. Adjusting the maths setup (use [no-math] to avoid this).
+.................................................
+\symlegacymaths=\mathgroup5
+LaTeX Font Info:    Overwriting symbol font `legacymaths' in version `bold'
+(Font)                  OT1/cmr/m/n --> OT1/cmr/bx/n on input line 11.
+LaTeX Font Info:    Redeclaring math accent \acute on input line 11.
+LaTeX Font Info:    Redeclaring math accent \grave on input line 11.
+LaTeX Font Info:    Redeclaring math accent \ddot on input line 11.
+LaTeX Font Info:    Redeclaring math accent \tilde on input line 11.
+LaTeX Font Info:    Redeclaring math accent \bar on input line 11.
+LaTeX Font Info:    Redeclaring math accent \breve on input line 11.
+LaTeX Font Info:    Redeclaring math accent \check on input line 11.
+LaTeX Font Info:    Redeclaring math accent \hat on input line 11.
+LaTeX Font Info:    Redeclaring math accent \dot on input line 11.
+LaTeX Font Info:    Redeclaring math accent \mathring on input line 11.
+LaTeX Font Info:    Redeclaring math symbol \Gamma on input line 11.
+LaTeX Font Info:    Redeclaring math symbol \Delta on input line 11.
+LaTeX Font Info:    Redeclaring math symbol \Theta on input line 11.
+LaTeX Font Info:    Redeclaring math symbol \Lambda on input line 11.
+LaTeX Font Info:    Redeclaring math symbol \Xi on input line 11.
+LaTeX Font Info:    Redeclaring math symbol \Pi on input line 11.
+LaTeX Font Info:    Redeclaring math symbol \Sigma on input line 11.
+LaTeX Font Info:    Redeclaring math symbol \Upsilon on input line 11.
+LaTeX Font Info:    Redeclaring math symbol \Phi on input line 11.
+LaTeX Font Info:    Redeclaring math symbol \Psi on input line 11.
+LaTeX Font Info:    Redeclaring math symbol \Omega on input line 11.
+LaTeX Font Info:    Redeclaring math symbol \mathdollar on input line 11.
+LaTeX Font Info:    Redeclaring symbol font `operators' on input line 11.
+LaTeX Font Info:    Encoding `OT1' has changed to `EU2' for symbol font
+(Font)              `operators' in the math version `normal' on input line 11.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
+(Font)                  OT1/cmr/m/n --> EU2/lmr/m/n on input line 11.
+LaTeX Font Info:    Encoding `OT1' has changed to `EU2' for symbol font
+(Font)              `operators' in the math version `bold' on input line 11.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
+(Font)                  OT1/cmr/bx/n --> EU2/lmr/m/n on input line 11.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
+(Font)                  EU2/lmr/m/n --> EU2/lmr/m/n on input line 11.
+LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `normal'
+(Font)                  EU2/lmr/m/n --> EU2/lmr/m/n on input line 11.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
+(Font)                  OT1/cmr/m/it --> EU2/lmr/m/it on input line 11.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
+(Font)                  OT1/cmr/bx/n --> EU2/lmr/bx/n on input line 11.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
+(Font)                  OT1/cmss/m/n --> EU2/lmss/m/n on input line 11.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
+(Font)                  OT1/cmtt/m/n --> EU2/lmtt/m/n on input line 11.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
+(Font)                  EU2/lmr/m/n --> EU2/lmr/bx/n on input line 11.
+LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `bold'
+(Font)                  EU2/lmr/m/n --> EU2/lmr/bx/n on input line 11.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
+(Font)                  OT1/cmr/bx/it --> EU2/lmr/bx/it on input line 11.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
+(Font)                  OT1/cmss/bx/n --> EU2/lmss/bx/n on input line 11.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
+(Font)                  OT1/cmtt/m/n --> EU2/lmtt/bx/n on input line 11.
+\Hy@linkcounter=\count370
+LaTeX Font Info:    Font shape `JY3/IPAExMincho(0)/m/n' will be
+(Font)              scaled to size 13.31805pt on input line 15.
+luaotfload | load : auto-selecting default features for script: latn
+luaotfload | load : no defaults for script "latn", falling back to "dflt"
+luaotfload | load : auto-selecting default features for script: latn
+luaotfload | load : no defaults for script "latn", falling back to "dflt"(load l
+uc: /home/yuri/.texmf-var/luatex-cache/generic/fonts/otf/lmroman12-regular.luc)
+LaTeX Font Info:    Font shape `JY3/IPAExGothic(0)/m/n' will be
+(Font)              scaled to size 13.31805pt on input line 15.
+luaotfload | load : auto-selecting default features for script: latn
+luaotfload | load : no defaults for script "latn", falling back to "dflt"
+luaotfload | load : auto-selecting default features for script: latn
+luaotfload | load : no defaults for script "latn", falling back to "dflt"(load l
+uc: /home/yuri/.texmf-var/luatex-cache/generic/fonts/otf/lmsans12-regular.luc)
+LaTeX Font Info:    Font shape `JY3/IPAExMincho(0)/bx/n' will be
+(Font)              scaled to size 9.24866pt on input line 16.
+luaotfload | load : auto-selecting default features for script: latn
+luaotfload | load : no defaults for script "latn", falling back to "dflt"
+luaotfload | load : auto-selecting default features for script: latn
+luaotfload | load : no defaults for script "latn", falling back to "dflt"(load l
+uc: /home/yuri/.texmf-var/luatex-cache/generic/fonts/otf/lmroman7-regular.luc)
+luaotfload | load : auto-selecting default features for script: latn
+luaotfload | load : no defaults for script "latn", falling back to "dflt"(load l
+uc: /home/yuri/.texmf-var/luatex-cache/generic/fonts/otf/lmroman5-regular.luc)
+luaotfload | load : auto-selecting default features for script: dflt
+luaotfload | load : auto-selecting default features for script: dflt
+luaotfload | load : auto-selecting default features for script: dflt
+luaotfload | load : auto-selecting default features for script: dflt
+luaotfload | load : auto-selecting default features for script: dflt
+luaotfload | load : auto-selecting default features for script: dflt
+luaotfload | load : auto-selecting default features for script: dflt
+luaotfload | load : auto-selecting default features for script: dflt
+luaotfload | load : auto-selecting default features for script: dflt
+LaTeX Font Info:    Font shape `JY3/IPAExMincho(0)/m/n' will be
+(Font)              scaled to size 6.47406pt on input line 18.
+luaotfload | load : auto-selecting default features for script: latn
+luaotfload | load : no defaults for script "latn", falling back to "dflt"
+LaTeX Font Info:    Font shape `JY3/IPAExMincho(0)/m/n' will be
+(Font)              scaled to size 4.62433pt on input line 18.
+luaotfload | load : auto-selecting default features for script: latn
+luaotfload | load : no defaults for script "latn", falling back to "dflt"
+luaotfload | load : auto-selecting default features for script: dflt
+luaotfload | load : auto-selecting default features for script: dflt
+LaTeX Font Info:    Font shape `JY3/IPAExMincho(0)/m/n' will be
+(Font)              scaled to size 11.09839pt on input line 33.
+luaotfload | load : auto-selecting default features for script: latn
+luaotfload | load : no defaults for script "latn", falling back to "dflt"
+luaotfload | load : auto-selecting default features for script: latn
+luaotfload | load : no defaults for script "latn", falling back to "dflt"
+LaTeX Font Info:    Font shape `JY3/IPAExGothic(0)/m/n' will be
+(Font)              scaled to size 11.09839pt on input line 33.
+luaotfload | load : auto-selecting default features for script: latn
+luaotfload | load : no defaults for script "latn", falling back to "dflt"
+luaotfload | load : auto-selecting default features for script: latn
+luaotfload | load : no defaults for script "latn", falling back to "dflt"
+! Undefined control sequence.
+\\   -\let \reserved@e 
+                       \relax \let \reserved@f \relax \@ifstar {\let \reserv...
+l.59 }
+    
+? X
+
+
+Here is how much of LuaTeX's memory you used:
+ 17239 strings out of 494690
+ 100000,460012 words of node,token memory allocated 49074 words of node memory still in use:
+   428 hlist, 21 vlist, 35 rule, 4 disc, 18 math, 543 glue, 99 kern, 101 penalty
+, 463 glyph, 16781 attribute, 800 glue_spec, 972 attribute_list, 1 temp, 4 write
+, 17 local_par, 1 dir, 10 pdf_colorstack nodes
+   avail lists: 2:1,7:8,10:4
+ 20188 multiletter control sequences out of 65536+600000
+ 56 fonts using 43181319 bytes
+ 58i,10n,63p,398b,256s stack positions out of 5000i,500n,10000p,200000b,100000s
+No pages of output.
+
+PDF statistics: 0 PDF objects out of 1000 (max. 8388607)
+ 0 named destinations out of 1000 (max. 131072)
+ 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+

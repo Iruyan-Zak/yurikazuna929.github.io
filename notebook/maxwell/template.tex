@@ -1,0 +1,57 @@
+\documentclass[12pt]{ltjsarticle}
+\usepackage{mymacro}
+\usepackage{notemode}
+\usepackage{mathmode}
+
+\newcommand{\dfr}[2]{\frac{\displaystyle #1}{\displaystyle #2}}
+
+\begin{document}
+\section{コンデンサの並列接続}
+並列に繋がれた2つのコンデンサ($C_1,C_2$)にそれぞれ$Q_1,Q_2$の電荷がたまっている。
+\begin{align*}
+Q_1 = C_1V,& \quad Q_2=C_2V\\
+(Q=Q_1+Q_2)&=(C_1+C_2)V\\
+\therefore Q=CV,& ただしC=C_1+C_2\\
+C_1=\epsilon_0\dfr{S_1}{d},& \quad C_2=\epsilon_0\dfr{S_2}{d}\\
+\therefore C &= \epsilon_0\dfr{S_1+S_2}{d}= C_1+C_2
+\end{align*}
+つまりコンデンサの並列接続とはそれぞれを横につなぎ合わせるのと同じ。
+
+\section{コンデンサの直列接続}
+直列に繋がれた2つのコンデンサにはどちらも$Q$の電荷が溜まっており、
+それぞれの電位差は$V_1,V_2$である。
+\begin{align*}
+Q=C_1V_1, & Q=C_2V_2\\
+V=V_1+V_2 &= \dfr Q{C_1}+\dfr Q{C_2}\\
+\therefore Q &= \sps{C=\dfr 1{\dfr 1{C_1}+\dfr 1{C_2}}}V\\
+\therefore C &= \dfr 1{\dfr 1{C_1}+\dfr 1{C_2}}
+\end{align*}
+\begin{align*}
+C =\dfr 1{\dfr 1{C_1}+\dfr 1{C_2}}
+=\dfr 1{\dfr {d_1}{C_1}+ \dfr{d_2}{C_2}}
+=\dfr{\epsilon_0S}{d1+d2}
+\end{align*}
+合成容量の計算は合成抵抗の計算と逆になる。
+\begin{align*}
+直列 &: \dfr 1{j\omega \sps{\dfr{C_1C_2}{C_1+C_2}}}
+=\dfr{C_1+C_2}{j\omega C_1C_2}
+=\dfr 1{j\omega C_2}+\dfr 1{j\omega C_1}\\
+並列 &: \dfr 1{j\omega C_1+j\omega C_2}
+=\dfr 1{j\omega (C_1+C_2)}
+\end{align*}
+
+\newcommand{\eo}{{\epsilon_0}}
+\section*{例7:積層コンデンサ}
+\begin{gather*}
+SE_1=\dfr {Q_1}{\epsilon_0}, \quad \therefore E_1={Q_1}{\epsilon_0S}\\
+S\sps{E_1=\dfr{Q_1}{\eo S}}+SE_2=\dfr{Q_2}\eo\\
+SE_1=\dfr {Q_2-Q_1}{\epsilon_0},\quad
+\therefore E_2=\dfr{Q_2-Q_1}{\epsilon_0S}\\
+V_1=E_1d=\dfr{Q_1}{\eo S},\quad
+V_2=E_2d=\dfr{Q_2-Q_1}{\eo S}d\\
+V=V_1=V_2より、Q_1=Q_2-Q_1, \quad \therefore 2Q_1=Q_2\\
+Q=Q_1+Q_2=Q_1+2Q_1=3Q_1\\
+V=V_2=V_1=\dfr{Q_1d}{\eo S}=\dfr{d}{\eo S} \cdot \dfr Q3\\
+\therefore Q=\sps{C=3\dfr{\eo S}{d}}V
+\end{gather*}
+\end{document}

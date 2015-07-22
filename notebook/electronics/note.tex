@@ -1,0 +1,293 @@
+\documentclass[12pt]{ltjsarticle}
+\usepackage[top=15truemm,bottom=15truemm,left=10truemm,right=10truemm]{geometry}
+\usepackage{luatexja-fontspec}
+\usepackage[ipaex]{luatexja-preset}
+%\setmainfont{Times New Roman}
+\usepackage{amsmath,amssymb}
+\usepackage{empheq}
+\usepackage{color}
+\usepackage{bm}
+\usepackage{ascmac}
+\newdimen\tbaselineshift
+
+\begin{document}
+\newcommand{\red}[1]{\textcolor{red}{#1}}
+\renewcommand{\labelenumi}{(\arabic{enumi})}
+\newcommand{\grad}[0]{\mathrm{grad}}
+\renewcommand{\div}[0]{\mathrm{div}}
+\newcommand{\round}[2]{\frac{\partial {#1}}{\partial {#2}}}
+\renewcommand{\epsilon}{\varepsilon}
+\section{電位分布と電場}
+\subsection{電位と電場の関係}
+電場$\vec E(\bm E)$電位$V(\bm r)$の時、
+\begin{align*}
+\bm E&=-\nabla V(\bm r)\\
+&=\grad V(\bm r)
+\end{align*}
+grad：\red{勾配}
+
+\newcommand{\vi}[0]{\bm i}
+\newcommand{\vj}[0]{\bm j}
+\newcommand{\vk}[0]{\bm k}
+\newcommand{\vE}[0]{\bm E}
+
+\begin{align*}
+\grad \equiv \nabla &\equiv
+(\round{}x,\round{}y,\round{}z)\\
+&=(\partial_x,\partial_y,\partial_z)\\
+&=\round{}x\vi+\round{}y\vj+\round{}z\vk\\
+\end{align*}
+$\vi,\vj,\vk$:単位ベクトル
+\begin{align*}
+|\vi|=|\vj|=|\vk|=1\\
+\vi\cdot\vj=\vj\cdot\vk=\vk\cdot\vi=0\\
+\vi=(1,0,0),\vj=(0,1,0),\vk=(0,0,1)
+\end{align*}
+$\bm E=(E_x,E_y,E_z)$を$x,y,z$の成分表示すると、
+\begin{align*}
+E_x=-\round Vx,E_y=-\round Vy,E_z=-\round Vz
+\end{align*}
+$V$:スカラー　$\vE$:ベクトル
+
+\subsection{電位分布を求めるための基礎方程式}
+電荷が連続的に分布する球体(\red{空間電荷})を考える。
+
+この時、単位体積あたりの電荷量\rho[C/m^3]を\red{空間電荷密度}という。
+
+半径rの球体の全電荷量Qは
+\begin{align*}
+Q=\frac43\pi r^3\rho
+\end{align*}
+となる。
+
+\subsection*{ガウスの法則}
+正の電荷からは電気力線が湧き出し、負の電荷へは電気力線が吸い込まれる。
+電気力線の束を\red{電束}といい、
+1[C]の電荷からは1本の電束が出ているものと定義する。
+
+微小体積を貫く電束を考える。
+ここでは簡単にするために$x$方向に貫く電束のみを考える。
+
+$x$方向の電場の変化量は
+\begin{align*}
+E_x\rightarrow E_x+\round{E_x}{x}dx
+\end{align*}
+これは微小体積での$x$方向の電場の変化量の変化を表す。
+
+\begin{align*}
+(電束の変化)&=\epsilon_0\round{E_x}{x}dxdydz\\
+\\
+\epsilon_0\round{E_x}{x}dx&:電束密度\\
+dydz&:貫く面積\\
+\epsilon_0&:真空の誘電率 [{\rm C^2/(N\cdot m^2)}]\\
+\\
+&=\rho dxdydz(全電荷)
+\end{align*}
+
+$y,z$方向も考えると、
+\begin{align*}
+&\epsilon_0\left[
+\epsilon_0\round{E_x}{x}dxdydz+
+\epsilon_0\round{E_y}{y}dxdydz+
+\epsilon_0\round{E_z}{z}dxdydz
+\right]\\
+=&\epsilon_0\left[\round{E_x}{x}+\round{E_y}{y}+\round{E_z}{z}\right]dxdydz\\
+=&\rho dxdydz
+\end{align*}
+よって、ガウスの法則
+
+\begin{align*}
+\div{\vE}=&\frac{\rho}{\epsilon_0}(=\nabla\cdot\vE)\\
+\div=&(\round{}{x}+\round{}{y}+\round{}{z})
+=\round{\vi}{x}+\round{\vj}{x}+\round{\vk}{x}\\
+\vE=&-\grad{V}
+\end{align*}
+
+\begin{itembox}[htbp]{ガウスの定理微分形}
+\begin{align*}
+\round{^2V}{x^2}+
+\round{^2V}{y^2}+
+\round{^2V}{z^2}=
+-\frac{\rho}{\epsilon_0}
+\end{align*}
+\end{itembox}
+
+\begin{align*}
+\div\grad{V}=\Delta V=&
+\left(\round{\vi}{x}+\round{\vj}{x}+\round{\vk}{x}\right)\cdot
+\left(\round{V\vi}{x}+\round{V\vj}{x}+\round{V\vk}{x}\right)\\
+=&\round{^2V}{x^2}+\round{^2V}{y^2}+\round{^2V}{z^2}\\
+=&-\frac{\rho}{\epsilon_0} 
+\end{align*}
+これを\red{ポアソン方程式}という。
+特に$\rho=0$のとき
+\begin{align*}
+\round{^2V}{x^2}+\round{^2V}{y^2}+\round{^2V}{z^2}=0
+\end{align*}
+である。これを\red{ラプラス方程式}という。
+
+これは2階微分方程式なので、$V$を求めるには初期条件を2つ与える必要がある。
+
+$V=ax+b$と表せるとき、
+\begin{align*}
+&\left\{
+\begin{array}{l}
+\round{^2V}{x^2}=0\\
+V(x=0)=2\\
+V(x=4)=6
+\end{array}
+\right.\\
+&\left\{
+\begin{array}{l}
+b=2\\
+4a+b=6\\
+\end{array}
+\right.
+\Rightarrow a=1,b=2\\
+&\therefore V=x+2\\
+&E=-\round{V}{x}=-1
+\end{align*}
+
+\newenvironment{simul}[0]{\left\{ \begin{array}{l}}{\end{array} \right.}
+
+\subsubsection*{円筒座標系}
+$r,\phi,z$による座標系
+\begin{align*}
+\frac1r\round{}{r}\left(r\round{V}{r}\right)+
+\frac1{r^2}\round{^2V}{\phi^2}+
+\round{^2V}{\phi^2}
+=-\frac\rho{\epsilon_0}
+\end{align*}
+\begin{align*}
+\begin{simul}
+x=r\cos\phi\\
+y=r\sin\phi
+\end{simul}
+\end{align*}
+
+\subsection{平行平面電極間の電位分布と電場}
+$V=0$の平面電極と、それに平行な$V=V_a$の平面電極が距離$D$[m]離れたところにある。
+2つの電極は$yz$平面上にある。
+
+$x$成分のラプラス方程式($\rho=0$)
+\begin{align*}
+\round{^2V}{x^2}&=0\\
+\int\round{^2V}{x^2}dx&=0\\
+\Leftrightarrow\round{V}{x}&=c\;\;(c:定数)\\
+\int\round{V}{x}dx&=\int cdx\\
+\Leftrightarrow V&=cx+c'\;\;(c':定数)\\
+V(x=0)=0,& V(x=D)=V_a\\
+\begin{simul}
+c'=0\\
+cD+c'=V_a
+\end{simul}
+&\Rightarrow
+\begin{simul}
+c'=0\\
+c=\frac{V_a}{D}
+\end{simul}\\
+\therefore V&=\frac{V_a}{D}x\\
+\\
+電場E_x&=-\round{V}{x}\;\;(E_y=E_z=0)\\
+&=-\frac{V_a}{D}
+\end{align*}
+
+ここで、空間電荷密度$\rho=-kx^{-1/2}$とおく。
+$x$軸方向のポアソン方程式は
+\begin{align*}
+\round{^2V}{x^2}=&\frac{k}{\epsilon_0}x^{-1/2}\\
+\int \round{^2V}{x^2}dx=&\int \frac{k}{\epsilon_0}x^{-1/2}dx\\
+\round Vx=&\frac{k}{\epsilon_0}\cdot 2x^{1/2}+c\;\;(c:定数)\\
+\int \round Vx dx=&\frac{2k}{\epsilon_0}\int x^{1/2}dx+\int c'\;\;(c':定数)
+\end{align*}
+初期条件(境界条件)
+\begin{align*}
+V(x=0)=&0\Leftrightarrow c'=0\\
+V(x=D)=&V_a\Leftrightarrow \frac{4k}{3\epsilon_0}D^{3/2}+cD+c'=V_a\\
+\therefore cD=&V_a-\frac{4k}{3\epsilon_0}c^{1/2}\\
+c=&\frac{V_a}{D}-\frac{4k}{3\epsilon_0}c^{1/2}
+\end{align*}
+
+\newcommand{\vF}[0]{\bm F}
+\newcommand{\vr}[0]{\bm r}
+\newcommand{\vv}[0]{\bm v}
+\section{静電場中の電子の運動}
+\subsection{電場による電子の加速}
+空間中に電子がある。
+ここに静電場$\vE=(E_x.E_y,E_z)$をかけると電子は電場の向きと反対向きに\red{クーロン力}$\vF=(F_x, F_y, F_z)$を受ける。
+電子の電荷を$-e$[C],質量を$m$[kg]とすると、運動方程式より、
+\begin{align*}
+m\frac{d^2\vr}{dt^2}=\vF(=-e\vE)\;\;
+(a\coloneqq\frac{d\vv}{dt},\vv\coloneqq\frac{d\vr}{dt})
+\end{align*}
+成分表示すると、
+\begin{align*}
+\begin{simul}
+m\frac{d^2x}{dt^2}=-eE_x\\
+m\frac{d^2y}{dt^2}=-eE_y\\
+m\frac{d^2z}{dt^2}=-eE_z
+\end{simul}
+\end{align*}
+電位を$V$として$\vE=-\nabla V$より、
+\begin{align*}
+\begin{simul}
+m\frac{d^2x}{dt^2}=e\round{V}{x}\\
+m\frac{d^2y}{dt^2}=e\round{V}{y}\\
+m\frac{d^2z}{dt^2}=e\round{V}{z}
+\end{simul}
+\end{align*}
+
+電子にも重力は働くが、クーロン力よりも十分小さいので無視する。
+
+%%\\
+%%電荷$Q_a,Q_b,Q_c$を三角形に、
+%%距離をそれぞれ$r_{ab}, r_{bc}, r_{ca}$だけ離して配置する。
+%%
+%%このとき、
+%%\begin{align*}
+%%V_{ab}=
+%%\end{align*}
+
+\subsubsection{平行平面電極間の電子の運動}
+例によってさっきから使っているコンデンサの、$V=0$のところに電子を1個おく。
+電子の初速度は$v_0=0$である。
+電子の運動方程式($\rho=0$)より、
+\begin{align*}
+m\frac{d^2x}{dt^2}=&e\frac{V_a}{D}\\
+\Leftrightarrow \frac{d^2x}{dt^2}=&\frac{eV_a}{D}\\
+これを積分して、\\
+\int\frac{d^2x}{dt^2}dt=&\frac{eV_a}{D}\int dt\\
+\frac xt =& \frac{eV_a}{mD}t+c\;\;(c:初速度(定数))
+\end{align*}
+この時、$v_0=0$より初速度$c$は0である。
+
+もう一度積分して、
+\begin{align*}
+\int\ frac xt dt=& \frac{eV_a}{mD}t\int tdt\\
+x=&\frac{eV_a}{mD}\frac{t^2}{2}+c'\;\;(c':初期位置(定数))\\
+t=0\rightarrow x=&0\\
+\therefore c'=&0\\
+\therefore x=&\frac{eV_a}{2mD}t^2{\rm m}
+\end{align*}
+
+(別解)
+\begin{align*}
+v=&V_a+at\\
+x=&V_0t+\frac12at^2\\
+V_0=&0,a=\frac{eV_a}{mD}\\
+\Rightarrow&
+\begin{simul}
+v=\frac{eV_a}{mD}t\\
+x=\frac{eV_a}{2mD}t^2
+\end{simul}
+\end{align*}
+これは等加速度運動である。
+
+また、電子が-極から+極に到達するまでにかかる時間$\tau$は
+\begin{align*}
+D=\frac{eV_a}{2mD}\tau^2\Leftrightarrow &\tau^2=\frac{2mD^2}{eV_a}\\
+\therefore \tau=&\sqrt{\frac{2m}{eV_a}}D
+\end{align*}
+$\tau$:\red{電子走行時間}($\rho=0,V_0=0$)
+\end{document}
+

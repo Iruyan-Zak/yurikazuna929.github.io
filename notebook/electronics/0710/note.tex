@@ -1,0 +1,110 @@
+\documentclass[12pt]{ltjsarticle}
+\usepackage{mymacro}
+\usepackage{mathmode}
+\usepackage{notemode}
+\usepackage[ipaex]{luatexja-preset}
+\begin{document}
+\newcommand{\unit}[1]{{\rm \,\,\,[#1]}}
+\subsection{電子ボルト及び電子の速度}
+電子のEOM(一次元$x$軸方向)
+\begin{align*}
+m\frac{dv}{dt} &= e\frac{dV}{dx},\quad\sps{v=\frac{dx}{dt}}\\
+\int mv\frac{dv}{dt}dt &= \int ev\frac{dV}{dx}dt\\
+\int^v_{v_0} &= \int^{V_0}_0 edV\\
+\Leftrightarrow \lps{\frac12mv^2}^v_{v_0} &= \lps{eV}^{V_0}_0\\
+\frac12mv^2-\frac12mv_0^2 &= eV_0\\
+(初速度v_0は0とする)& \\
+\frac12mv^2 &= eV_0 \unit{J}
+\end{align*}
+
+電子が1 [V]の電位差の間を通った時に得られるエネルギーは$1.602\times10^{-19}$ [J]
+
+これを\red{1 [eV(電子ボルト)]}と定義する。
+
+電子の速度は
+\begin{align*}
+v=\sqrt\frac{2eV_0}{m} \unit{m/s}
+\end{align*}
+
+\clearpage
+\section{静磁場中の電子の運動}
+\subsection*{ベクトル積(外積)}
+\newcommand{\va}{\bm A}
+\newcommand{\vb}{\bm B}
+\newcommand{\vc}{\bm C}
+\newcommand{\vd}{\bm D}
+\newcommand{\vi}{\bm i}
+\newcommand{\vj}{\bm j}
+\newcommand{\vk}{\bm k}
+点$O$から\va,\vb が角度$\theta$をなして存在している。
+
+\va と\vb によって作られる平行四辺形の面積$S$は、
+\[ S=|\va||\vb|\sin\theta \]
+このとき、平行四辺形に垂直に交わるベクトル\vc は、
+\[ \vc = \va \times \vb = - \vb \times \va \]
+となる。
+
+よって、
+\begin{align*}
+\va\times\vb &= -\vb\times\va\\
+(\va+\vb)\times\vd &= \va\times\vd + \vb\times\vd\\
+\va=(A_x,A_y,A_z)&\quad \vb=(B_x,B_yB_z)\\
+ここで、x,y,z方向の単位ベクトル&\vi,\vj,\vk を考えると、\\
+\vi\times\vj=\vk,
+\vj\times\vk=\vi&,
+\vk\times\vi=\vj,
+\vi\times\vi=\bm 0
+\end{align*}
+\vi,\vj,\vk は$Cyclic$である。
+
+\begin{align*}
+\va &= A_x\vi+A_y\vj+A_z\vk,
+\vb = B_x\vi+B_y\vj+B_z\vk\\
+\va\times\vb &=
+\sps{A_x\vi+A_y\vj+A_z\vk}\times
+\sps{B_x\vi+B_y\vj+B_z\vk}\\
+&=A_xB_y\vi\times\vj
++A_xB_z\vi\times\vk
++A_yB_x\vj\times\vi
++A_yB_z\vj\times\vk
++A_zB_x\vk\times\vi
++A_zB_y\vk\times\vj\\
+&=(A_yB_z-A_zB_y)\vi
++(A_zB_x-A_xB_z)\vj
++(A_xB_y-A_yB_x)\vk\\
+&=(A_yB_z-A_zB_y,A_zB_x-A_xB_z,A_xB_y-A_yB_x)\\
+&=\left|
+\begin{array}{ccc}
+\vi&\vj&\vk\\
+A_x&A_y&A_z\\
+B_x&B_y&B_z
+\end{array}
+\right|\\
+&=\sum^3_{j,k=1}{\epsilon_{ijk}A_jB_k}
+\end{align*}
+
+\clearpage
+\subsection{磁場による電子の加速}
+\newcommand{\vf}{\bm F}
+\newcommand{\vr}{\bm r}
+\newcommand{\vv}{\bm v}
+\bold{◎ローレンツ力}
+磁場中で速度$v$ [m/s]で動く電子は力を受ける。
+この力を\red{ローレンツ力}という。
+
+\[ \vf = -e \vv\times\vb \quad(\vb:磁束密度) \]
+
+電子のEOMは
+\begin{align*}
+\frac{d^2\vr}{dt^2} = -\frac em\vv\times\vb\\
+成分表示：\vr=(x,y,z),\vv=(v_x,v_y,v_z),\vb=(B_xB_y,B_z)とおく。
+\end{align*}
+\begin{align*}
+\begin{simul}
+\frac{d^2x}{dt^2} = -\frac em\sps{v_yB_z-v_zB_y}\\
+\frac{d^2y}{dt^2} = -\frac em\sps{v_xB_z-v_zB_x}\\
+\frac{d^2z}{dt^2} = -\frac em\sps{v_xB_y-v_yB_x}
+\end{simul}
+\end{align*}
+\end{document}
+
