@@ -1,18 +1,8 @@
-\documentclass[12pt]{ltjsarticle}
+\documentclass[12pt,fleqn]{ltjsarticle}
 \usepackage{mymacro}
 \usepackage{notemode}
-%\usepackage[top=15truemm,bottom=15truemm,left=10truemm,right=10truemm]{geometry}
-%\usepackage{luatexja-fontspec}
-%\usepackage[ipaex]{luatexja-preset}
-%\usepackage{amsmath}
-%\usepackage{empheq}
-%\usepackage{color}
-%\usepackage{ascmac}
+\usepackage{mathmode}
 \begin{document}
-%\newcommand{\red}[1]{\textcolor{red}{#1}}
-%\newcommand{\bold}[1]{{\bf {#1}}}
-%\renewcommand{\labelenumi}{(\arabic{enumi})}
-%\renewcommand{\~}{$\sim$}
 
 \section{明治維新}
 \subsection{新政府の基本方針が発表されます！}
@@ -474,5 +464,96 @@ A.
 \bold{1880年 \red{国会期成同盟}}(不受理)
 
 これに対して政府は、集会を規制する\red{集会条例}を制定した。
+
+\subsection{明治十四年の政変}
+1878年。大久保が暗殺されてしまいました。
+
+\begin{csvtab}{ccc}
+候補, 国会開設の時期,立憲政治のモデル
+大隈重信,早期(2年後),イギリス(政党政治)
+伊藤博文,漸進的,プロイセン
+\end{csvtab}
+多数派であった伊藤博文が後継する。
+
+\bold{1881年 \red{開拓使官有物払い下げ事件}}
+\begin{itemize}
+\item 開拓使(役所)を閉める際にお友達に官有物を
+安く売り払った(えこひいきした)事件
+\item 干ばつも相俟って民権派(世論)の批判が殺到
+\item 大隈が民権派の肩を持つ
+\item 政府の中で大隈が民権派を扇動したという噂が立つ
+\item 伊藤ら多数派、天皇の力で大隈参議を罷免する
+(\bold{\red{明治十四年の政変}})
+\item とりあえず文句を言われないように払い下げは中止
+\item \red{国会開設の勅諭[詔]}を出して1890年の国会開設を約束
+\end{itemize}
+
+\subsection{松方財政}
+\subsubsection{背景}
+\begin{align*}
+&\begin{simul}
+明治維新諸政策\\
+西南戦争(1年分の予算を使用)
+\end{simul}\rightarrow 政府は資金難になる\\
+&\Rightarrow
+\begin{simul}
+国立銀行からの借り入れ(国立銀行券を発行して対応)\\
+政府が自分たちで紙幣を発行
+\end{simul}= 不換紙幣が大量に刷られた\\
+&\begin{simul}
+\Rightarrow {\rm \bold{インフレ}}\\
+対して地租は定額
+\end{simul}\rightarrow 政府はさらなる財政難に陥る。
+\end{align*}
+
+\subsubsection{松方財政}
+1881年ごろ 大蔵卿 大隈重信の政策
+\begin{itemize}
+\item 増税：酒造税など、嗜好品に対して増税する
+\item 官営事業(必須・かつ赤字)の払い下げに着手
+\end{itemize}
+→明治十四年の政変：大隈罷免
+
+\bold{1881年 大蔵卿\red{松方正義}が政策を継承}
+\begin{itemize}
+\item 軍事費以外の歳出抑制
+\item 増税：酒・たばこなど
+\item 官営事業の払い下げを継続
+\end{itemize}
+$\rightarrow$余剰金(利益・黒字)が生まれる
+\begin{align*}
+\Rightarrow\begin{simul}
+借入金返済(国立銀行側で償却)\\
+政府紙幣償却
+\end{simul}\rightarrow
+インフレが落ち着くと同時にデフレに突入する
+\end{align*}
+
+◎政府紙幣償却について
+\begin{itemize}
+\item 政府は紙幣を発行しました = 神様からお金を借りました
+\item 政府に黒字が生まれました = 返済する用意が出来ました
+\item 政府は自分で発行した紙幣を処分しました = 神様にお金を返しました
+\end{itemize}
+
+\bold{1882年 \red{日本銀行}を設立}
+\begin{itemize}
+\item 国立銀行から国立銀行券を発行する機能を取り上げる
+\item 代わりに銀兌換の日本銀行券を発券する機能を持っている
+\end{itemize}
+
+\subsubsection{影響}
+デフレーション→不況
+\begin{itemize}
+\item インフレ時には景気が良くなる場合と
+悪くなる場合(スタグフレーション)があり得る
+\item しかしデフレ時に景気が良くなることはない
+\begin{itemize}
+\item 物価が継続的に下落する状況では、必要なものでない限りは
+後で買うほうが得になる→消費低迷
+\end{itemize}
+\end{itemize}
+
+これにより中小自作農の生活に打撃(お金は減るのに地租は変わらず)
 \end{document}
 
