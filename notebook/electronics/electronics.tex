@@ -2,6 +2,7 @@
 \usepackage{mymacro}
 \usepackage{mathmode}
 \usepackage{notemode}
+\newcommand{\ds}{\displaystyle}
 \begin{document}
 \section{光電子放出}
 \subsection{光電子放出の一般の性質}
@@ -450,10 +451,145 @@ B_x&B_y&B_z
 \end{gather*}
 \begin{align*}
 \begin{simul}
-\frac{d^2x}{dt^2} = -\frac em\sps{v_yB_z-v_zB_y}\\
-\frac{d^2y}{dt^2} = -\frac em\sps{v_xB_z-v_zB_x}\\
-\frac{d^2z}{dt^2} = -\frac em\sps{v_xB_y-v_yB_x}
+\ds\frac{d^2x}{dt^2} = -\frac em\sps{v_yB_z-v_zB_y}\\
+\ds\frac{d^2y}{dt^2} = -\frac em\sps{v_xB_z-v_zB_x}\\
+\ds\frac{d^2z}{dt^2} = -\frac em\sps{v_xB_y-v_yB_x}
 \end{simul}
 \end{align*}
 
+
+\newcommand{\vB}{{\bm B}}
+%\setlength\abovedisplayskip{16pt plus 3pt minus 7pt}
+%\setlength\belowdisplayskip{16pt plus 3pt minus 7pt}
+%\makeatletter
+%\g@addto@macro\normalsize{%
+%  \setlength\abovedisplayskip{40pt}
+%    \setlength\belowdisplayskip{40pt}
+%      \setlength\abovedisplayshortskip{40pt}
+%        \setlength\belowdisplayshortskip{40pt}
+%}
+%\makeatother
+\subsubsection{一様な磁場中の電子の運動}
+\bold{◎ローレンツ力}
+\[
+    \vf=-e\vv\times\vB
+\]
+電子のEOMは、
+\[\round{^2\vr}{t^2}=-e\vv\times\vB, \vv=\frac{d\vr}{dt}\]
+
+\begin{align*}
+\vr=(x,y,z),\quad \vB=(B_x,B_y,B_z)\\
+\begin{simul}
+\ds\frac{d^2x}{dt^2}=-\frac em\sps{\frac{dy}{dt}B_z-\frac{dz}{dt}B_y}\\
+\ds\frac{d^2y}{dt^2}=-\frac em\sps{\frac{dz}{dt}B_x-\frac{dx}{dt}B_z}\\
+\ds\frac{d^2z}{dt^2}=-\frac em\sps{\frac{dx}{dt}B_y-\frac{dy}{dt}B_x}\\
+\end{simul}
+\end{align*}
+
+$Z$軸方向の磁束密度を考える。($\vB=(0,0,B_z)$)
+
+\begin{align*}
+\begin{simul}
+\ds\frac{d^2x}{dt^2}=-\frac em\frac{dy}{dt}B_z\\
+\ds\frac{d^2x}{dt^2}=-\frac em\frac{dx}{dt}B_z\\
+\ds\frac{d^z}{dt^2}=0
+\end{simul}
+\end{align*}
+
+これらを$t$で積分する。
+
+\begin{align*}
+\frac{dx}{dt}&=-\frac emyB_z+C_2'\\
+\frac{dx}{dt}&=-\frac emxB_z+C_1'\\
+\frac{dz}{dt}&=C_3\\
+&(C_1',C_2',C_3'は積分定数)\\
+C_2'&=-\frac emB_zC_2,C_1'=\frac emB_zC_1\quad(C_1,C_2は定数)とすると
+\end{align*}
+
+\begin{align}
+\label{eq1}\frac{dx}{dt}&=-\frac emB_z(y+C_2)=v_x\\
+\label{eq2}\frac{dx}{dt}&=-\frac emB_z(x+C_1)=v_y\\
+\label{eq3}\frac{dz}{dt}&=C_3=v_z
+\end{align}
+
+\begin{align*}
+v_z&=v\cos\theta\quad(v=|\vv|)\\
+\sqrt{v_x^2+v_y^2}&=v\sin\theta
+\Leftrightarrow v_x^2+v_y^2=v^2\sin^2\theta\\
+(\ref{eq1}),(\ref{eq2})を&代入すると、\\
+&\frac{e^2}{m^2}B_z^2(y+C_2)^2
+\frac{e^2}{m^2}B_z^2(x+C_1)^2
+=v^2\sin^2\theta\\
+&(x+C_1)^2+(y+C_2)^2=\sps{\frac{mv\sin\theta}{eB_z}}^2\\
+&円の方程式：半径r=\frac{mv\sin\theta}{eB_z}\\
+周期Tは&T=\frac{a\pi r}{v\sin\theta}=\frac{2\pi m}{eB_z}\\
+角速度\omega_c&=\frac{2\pi}{T}=\frac{eB_z}{m}
+:{\rm \red{サイクロトロン角周波数}}
+\end{align*}
+
+$Z$軸が円の中心を通るとき、$C_1=0,C_2=0$となる。その時の解は、
+
+\begin{align*}
+\begin{simul}
+x=r\cos(\omega_ct+\epsilon)\\
+x=r\sin(\omega_ct+\epsilon)\\
+z=vt\cos\theta
+\end{simul}\\
+\epsilon はt=0の電子の位置で決まる。
+\end{align*}
+
+これは$z$軸を中心に螺旋運動する。
+
+\clearpage
+\subsubsection{静電磁場中の電子の運動}
+\bold{◎電場と磁場が直交しているとき}
+距離$D$,電位差$v_a$のコンデンサを考える。電子のEOMは、
+\begin{align*}
+\vE&=(E,0,0)\\
+\vB&=(0,0,B)
+\end{align*}
+
+教科書の(3.24),(3.25),(3.37)式を組み合わせると、
+\begin{align*}
+m\frac{d^2\vr}{dt^2}&=-e\vE-e\vv\times\vB\\
+E&=-\round{V_x}{x}=-\frac{V_a}{D}
+\end{align*}
+
+成分表示すると、
+\newcommand{\blue}[1]{\textcolor{blue}{#1}}
+\newcommand{\nl}{\\[10pt]}
+\begin{align*}
+\begin{simul}
+\ds\frac{d^2x}{dt^2}=\red{\frac em\frac{V_a}{D}}
+-\blue{\frac emB\frac{dy}{dt}}=\frac{dv_z}{dt}\nl
+\ds\frac{d^2y}{dt^2}=\blue{\frac emB\frac{dy}{dt}}=\frac{dv_y}{dt}\nl
+\ds\frac{d^2z}{dt^2}=0,\frac{dv_z}{dt}=0\quad(z軸方向は等速直線運動)
+\end{simul}
+\end{align*}
+(\red{赤字：クーロン力},\blue{青字：ローレンツ力})
+
+ここで$\ds A=\red{\frac{eV_a}{mD}},\omega_c=\blue{\frac{eB}{m}}$とおく。
+
+\begin{align*}
+\frac{dv_x}{dt}=A-\omega_cv_y\\
+tで微分して、\frac{d^2V_x}{dt^2}=-\omega_c\frac{dv_y}{dt}\\
+\frac{dv_y}{dt}=\omega_cv_x\\
+\Rightarrow \frac{d^v_x}{dt^2}=-\omega_c^2v_x
+\end{align*}
+
+これを$v_x=\cdots$の式に直し、$v_x$についての微分方程式を解く。
+\begin{enumerate}
+\item 上の式を2階積分して$v_x=\cdots$の式にする
+\item 一般解を与える(微分方程式を満たすように解を決める)
+\end{enumerate}
+
+\begin{align*}
+v_x&=C_1\sin{\omega_ct}+C_2\cos{\omega_ct},\quad (C_1,C_2:積分定数)\\
+\frac{dv_x}{dt}&=\omega_c(C_1\cos{\omega_ct}-C_2\sin{\omega_ct})\\
+\frac{d^2v_x}{dt^2}&=
+-\omega_c^2(C_1\sin{\omega_ct}+C_2\cos{\omega_ct})\\
+&=-\omega_c^2v_x
+\end{align*}
+
 \end{document}
+
