@@ -571,10 +571,10 @@ E&=-\round{V_x}{x}=-\frac{V_a}{D}
 ここで$\ds A=\red{\frac{eV_a}{mD}},\omega_c=\blue{\frac{eB}{m}}$とおく。
 
 \begin{align*}
-\frac{dv_x}{dt}=A-\omega_cv_y\\
-tで微分して、\frac{d^2V_x}{dt^2}=-\omega_c\frac{dv_y}{dt}\\
-\frac{dv_y}{dt}=\omega_cv_x\\
-\Rightarrow \frac{d^v_x}{dt^2}=-\omega_c^2v_x
+\frac{dv_x}{dt}&=A-\omega_cv_y\\
+tで微分して、\frac{d^2V_x}{dt^2}&=-\omega_c\frac{dv_y}{dt}\\
+\frac{dv_y}{dt}&=\omega_cv_x\\
+\Rightarrow \frac{d^v_x}{dt^2}&=-\omega_c^2v_x
 \end{align*}
 
 これを$v_x=\cdots$の式に直し、$v_x$についての微分方程式を解く。
@@ -583,12 +583,125 @@ tで微分して、\frac{d^2V_x}{dt^2}=-\omega_c\frac{dv_y}{dt}\\
 \item 一般解を与える(微分方程式を満たすように解を決める)
 \end{enumerate}
 
+\subsubsection*{2階積分解法}
 \begin{align*}
 v_x&=C_1\sin{\omega_ct}+C_2\cos{\omega_ct},\quad (C_1,C_2:積分定数)\\
 \frac{dv_x}{dt}&=\omega_c(C_1\cos{\omega_ct}-C_2\sin{\omega_ct})\\
 \frac{d^2v_x}{dt^2}&=
 -\omega_c^2(C_1\sin{\omega_ct}+C_2\cos{\omega_ct})\\
 &=-\omega_c^2v_x
+\end{align*}
+
+\subsubsection*{一般解解法}
+\begin{align*}
+v_x=&C_1\sin{\omega_ct}+C_2\cos{\omega_ct}\\
+\frac{dv_x}{dt}=&\omega_c(C_1\cos{\omega_ct}-C_2\sin{\omega_ct})\\
+\frac{d^2v_x}{dt^2}=&-\omega_c^2v_x\\
+初期状態:t=0\rightarrow &v_x=0,v_y=0\\
+v_x(t=0)=&C_2=0\\
+\frac{dv_x(t=0)}{dt}=&A-\omega_c v_y(t=0),\quad v_y(t=0)=0\\
+\therefore \omega_cC_1=&A\\
+C_1=&\frac{A}{\omega_c}\\
+\therefore v_x=&\frac{A}{\omega_c}\sin{\omega_ct}\\
+\frac{dv_x}{dt}=&A-\omega_c v_y\\
+v_y=&\frac{A}{\omega_c}-\frac1{\omega_c}\frac{dv_x}{dt}\\
+=&\frac{A}{\omega_c}-\frac{A}{\omega_c}\cos{\omega_ct}
+\end{align*}
+
+位置$x(t),y(t)$を求めるために、$v_x,v_y$を$t$で微分する。
+
+\begin{align*}
+x(t)=&\int v_x dt\\
+=&\int \frac {A}{\omega_c}\sin{\omega_ct}dt\\
+=&-\frac{A}{\omega_c}\cos{\omega_ct}+C_3\\
+y(t)=&\int v_y dt\\
+=&\frac{A}{\omega_c}t-\frac{A}{\omega_c}\sin{\omega_ct}+C_4
+\end{align*}
+
+\begin{align*}
+初期状態:t=0\rightarrow &x=0, y=0\\
+x(t=0)=&-\frac{A}{\omega_c^2}+C_3=0\\
+\Leftrightarrow &C_3=\frac{A}{\omega_c^2}\\
+y(t=0)=&C_4=0\\
+\therefore x(t)=&-\frac{A}{\omega_c^2}\cos{\omega_ct}
++\frac{A}{\omega_c^2}\\
+y(t)=&\frac{A}{\omega_c}t-\frac{A}{\omega_c^2}\sin{\omega_ct}
+\end{align*}
+
+$x,y$は\red{サイクロイド}の式になっている。
+
+円の半径$\ds r=\frac{A}{\omega_c^2}$で、
+\begin{align*}
+\omega_ct=\pi のとき、x_m=\frac{2A}{\omega_c^2}\\
+\omega_ct=2\pi のとき、y_m=\frac{2\pi A}{\omega_c^2}
+\end{align*}
+
+$x_m,y_m$はそれぞれサイクロイドの最大の幅および高さである。
+
+\clearpage
+\subsection{空間電荷による電流}
+\subsubsection{空間電荷による定常電流}
+\bold{◎定常電流と電圧の関係}
+
+空間電荷密度$\rho\ne 0$のとき、ポアソン方程式は
+\[\frac{d^2V}{dx^2}=-\frac{\rho}{\epsilon_0}\]
+となる。
+
+ここで、$x=0$に$V=0$の陰極、$x=D$に$V=V_a$の陽極があり、
+$\rho\ne 0$である平行平面電極を考える。
+ここで、電流密度を$J\unit{A/m^2}$, 電子の速度を$v\unit{m/s}$とすると、
+\[J=\rho v\]
+が成り立つ。
+
+この時$J$は\bold{定常}電流(密度)となる。
+
+4章 『真空管』では、定常電流と電位の関係を導く。
+
+(3.33)式より、($V$は電位)
+\begin{align*}
+\frac12mv^2=&eV\;\;(v_0=0)\\
+\ds v=&\sqrt{\frac{2eV}{m}}\\
+\ds \therefore \rho=&J/\sqrt{\frac{2eV}{m}}
+\end{align*}
+
+これをポアソン方程式に代入して
+
+\begin{align*}
+\frac{d^2V}{dx^2}=&-\frac{\ds J}{\ds \epsilon_0\sqrt{\frac{2eV}{m}}}\\
+\frac{dV}{dx}dxで積分&\\
+\int \frac{d^2V}{dx^2}\frac{dV}{dx}dx=&
+\int -\frac{\ds J}{\ds \epsilon_0\sqrt{\frac{2eV}{m}}}dV\\
+\frac12\sps{\frac{dV}{dx}}^2=&-2\frac{J}{\epsilon_0}
+\sqrt{\frac{V}{2e/m}}+C
+\end{align*}
+
+ここで、陰極では$V=0$であり、
+空間電荷密度が大きい時、電位は小さくなる。
+
+電場が0$\Rightarrow C=0$
+
+\begin{align*}
+\sps{\frac{dV}{dx}}^2=&-4\frac{J}{\epsilon_0}
+\sqrt{\frac{V}{2e/m}}\\
+\frac{dV}{dx}=&\sqrt{\ds -4\frac{J}{\epsilon_0}
+\sqrt{\frac{V}{2e/m}}}\;\;(平方根を取る)\\
+\frac{dV}{dx}=&\sps{\ds -\frac{4J}
+{\epsilon_0}\frac1{\sqrt{{2e/m}}}}^{\ds\frac12}V^{\frac14}\\
+左辺にV,右辺にxと変数分解する。\\
+V^{-\frac14}dV=&\sps{\ds -\frac{4J}
+{\epsilon_0}\frac1{\sqrt{{2e/m}}}}^{\ds\frac12}dx\\
+積分して、\int V^{-\frac14}dV=& \int \sps{\ds -\frac{4J}
+{\epsilon_0}\frac1{\sqrt{{2e/m}}}}^{\ds\frac12}dx\\
+\frac43V^{\frac34}V=&\sps{\ds -\frac{4J}
+{\epsilon_0}\frac1{\sqrt{{2e/m}}}}^{\ds\frac12}x+C'\\
+x=0,v=0よりC'=0で、
+\frac{16}{9}V^{\frac32}=&\ds -\frac{4J}
+{\epsilon_0}\frac1{\sqrt{{2e/m}}}x^2\quad (両辺を二乗した)\\
+J=&-\frac49\epsilon_0\sqrt{\ds\frac{2e}{m}}\frac{V^{\frac32}}{x^2}\\
+陽極の電位x=D,V=V_aで、\\
+J=&-\underline{\frac49\epsilon_0\sqrt{\ds\frac{2e}{m}}}\frac{V_a^{\frac32}}{D^2}\\
+=&-\underline{2.33\times10^{-6}}\frac{V_a^{\frac32}}{D^2}\\
+=&-\underline KV_a^{\frac32},\quad \red{K:パーヴィアンス}
 \end{align*}
 
 \end{document}
