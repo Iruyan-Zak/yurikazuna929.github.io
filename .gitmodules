@@ -1,0 +1,3 @@
+[submodule "virtual-kakurembo"]
+	path = virtual-kakurembo
+	url = https://github.com/yurikazuna929/virtual-kakurembo.git
