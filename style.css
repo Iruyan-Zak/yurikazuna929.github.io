@@ -1,0 +1,30 @@
+dt {
+  float:left;
+}
+.pdt {
+	width:32px;
+}
+.pddd {
+	width:256px;
+}
+
+.wdt {
+	width:128px;
+}
+
+.date {
+	width:160px;
+}
+
+.media {
+	width:64px;
+}
+
+.gauge-fill {
+ position: absolute;
+ left: 100px;
+}
+.gauge-blank {
+ position: absolute;
+ left: 100px;
+}
