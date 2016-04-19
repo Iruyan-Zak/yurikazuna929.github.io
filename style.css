@@ -1,30 +1,61 @@
-dt {
-  float:left;
-}
-.pdt {
-	width:32px;
-}
-.pddd {
-	width:256px;
+* {
+	border: 0;
+	margin: 0;
+	padding: 0;
 }
 
-.wdt {
-	width:128px;
+body {
+	background: #fff3f3;
+	width: 90%;
+	margin: 0 auto;
+	padding: 16px 0;
+	color: #021;
+	font-family: Avenir , "Open Sans", "ヒラギノ角ゴ Pro W3" , "Hiragino Kaku Gothic Pro" , Meiryo , sans-serif;
+}
+
+section {
+	margin: 32px 0;
+}
+
+dt {
+	float: left;
+}
+
+#title {
+	text-align: center;
+	margin: 32px;
+}
+
+.theme {
+	margin: 8px 0;
+}
+
+.SNS-name {
+	width: 80px;
+}
+
+.skill-name {
+	width: 160px;
+}
+
+.skill-bar {
+	background-color: rgba(180, 20, 10, 0.2); /*#b43*/
+	margin: 5px 0 5px 160px;
+	width: calc(100% - 160px);
+	border-radius: 8px;
+}
+
+.skill-power {
+	height: 24px;
+	background-color: rgba(60, 200, 50, 1); /*#4b3*/
+	border-radius: 8px;
 }
 
 .date {
-	width:160px;
+	width: 160px;
 }
 
-.media {
-	width:64px;
-}
-
-.gauge-fill {
- position: absolute;
- left: 100px;
-}
-.gauge-blank {
- position: absolute;
- left: 100px;
+.event {
+	width: calc(100% - 160px);
+	margin: 0 0 0 160px;
 }
