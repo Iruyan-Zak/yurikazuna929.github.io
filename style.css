@@ -5,8 +5,10 @@
 }
 
 body {
-	background: #fff3f3;
+	background: #fffbf3;
 	width: 90%;
+	min-width: 320px;
+	max-width: 800px;
 	margin: 0 auto;
 	padding: 16px 0;
 	color: #021;
@@ -17,8 +19,18 @@ section {
 	margin: 32px 0;
 }
 
+dl {
+	margin: 16px 0;
+}
+
 dt {
+	width: 135px;
 	float: left;
+}
+
+dd {
+	width: calc(100% - 135px);
+	margin: 0 0 0 135px;
 }
 
 #title {
@@ -30,18 +42,14 @@ dt {
 	margin: 8px 0;
 }
 
-.SNS-name {
-	width: 80px;
-}
-
-.skill-name {
-	width: 160px;
+.SNS {
+	border: 1px;
+	border-style: none none dashed none;
 }
 
 .skill-bar {
 	background-color: rgba(180, 20, 10, 0.2); /*#b43*/
-	margin: 5px 0 5px 160px;
-	width: calc(100% - 160px);
+	margin-bottom: 5px;
 	border-radius: 8px;
 }
 
@@ -51,11 +59,3 @@ dt {
 	border-radius: 8px;
 }
 
-.date {
-	width: 160px;
-}
-
-.event {
-	width: calc(100% - 160px);
-	margin: 0 0 0 160px;
-}
