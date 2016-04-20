@@ -19,7 +19,7 @@ section {
 	margin: 32px 0;
 }
 
-dl {
+p, dl, .theme {
 	margin: 16px 0;
 }
 
@@ -38,11 +38,7 @@ dd {
 	margin: 32px;
 }
 
-.theme {
-	margin: 8px 0;
-}
-
-.SNS {
+#title, p, .theme, .SNS, .bio, .skill *{
 	border: 1px;
 	border-style: none none dashed none;
 }
@@ -54,8 +50,8 @@ dd {
 }
 
 .skill-power {
-	height: 24px;
 	background-color: rgba(60, 200, 50, 1); /*#4b3*/
+	height: 24px;
 	border-radius: 8px;
 }
 
