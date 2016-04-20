@@ -20,7 +20,7 @@ section {
 }
 
 p, dl, .theme {
-	margin: 16px 0;
+	margin: 0 0 16px 0;
 }
 
 dt {
@@ -38,20 +38,22 @@ dd {
 	margin: 32px;
 }
 
-#title, p, .theme, .SNS, .bio, .skill *{
+
+#title, p, .theme, .SNS, .bio, .skill {
 	border: 1px;
 	border-style: none none dashed none;
+	border-color: #cba;
 }
 
 .skill-bar {
 	background-color: rgba(180, 20, 10, 0.2); /*#b43*/
-	margin-bottom: 5px;
+	margin-top: 5px;
 	border-radius: 8px;
 }
 
 .skill-power {
 	background-color: rgba(60, 200, 50, 1); /*#4b3*/
-	height: 24px;
+	height: 22px;
 	border-radius: 8px;
 }
 
